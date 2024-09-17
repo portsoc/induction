@@ -1,4 +1,4 @@
-const data = await fetchData();
+let data = {};
 const ui = {};
 ui.main = document.querySelector('main');
 ui.header = document.querySelector('header');
@@ -8,22 +8,22 @@ ui.coursenav = ui.header.querySelector('.course-nav');
 
 async function fetchData() {
   const response = await fetch('./data/data.json');
-  return await response.json();
+  data = await response.json();
 }
 
 function getLevelText(level) {
   const texts = {
-    "L4": "Level 4 - BSc/MEng year 1",
-    "L5": "Level 5 - BSc/MEng year 2",
-    "L6": "Level 6 - BSc Final Year / MEng year 3",
-    "L7": "Level 7 - MEng Final Year / all MSc students",
+    L4: 'Level 4 - BSc/MEng year 1',
+    L5: 'Level 5 - BSc/MEng year 2',
+    L6: 'Level 6 - BSc Final Year / MEng year 3',
+    L7: 'Level 7 - MEng Final Year / all MSc students',
   };
 
   return texts[level];
 }
 
 function buildNav() {
-  for (const [level, plans] of Object.entries(data.plans)) {
+  for (const level of Object.keys(data.plans)) {
     const btn = document.createElement('button');
     btn.dataset.level = level;
     btn.addEventListener('click', showCourseNav);
@@ -36,7 +36,7 @@ function showCourseNav(e) {
   ui.coursenav.classList.remove('hidden');
   hideAllPlans();
   showInfo();
-  ui.coursenav.innerHTML = "";
+  ui.coursenav.innerHTML = '';
   for (const course of data.plans[e.target.dataset.level]) {
     const coursebtn = document.createElement('button');
     coursebtn.textContent = course.title;
@@ -70,7 +70,6 @@ function hideAllPlans() {
     }
     level.classList.add('hidden');
   }
-
 }
 
 
@@ -106,7 +105,6 @@ function populate() {
 
       sortEvents(planSect);
     }
-
   }
 }
 
@@ -163,6 +161,11 @@ function fixEndTime(start, duration) {
   }
 }
 
-populate();
-buildNav();
-showInfo();
+async function main() {
+  await fetchData();
+  populate();
+  buildNav();
+  showInfo();
+}
+
+main();
