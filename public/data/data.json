@@ -56,7 +56,7 @@
           "description": "Show your findings of the Treasure Hunt challenge. Your personal tutor will have emailed a specific time and room.",
           "day": "wednesday",
           "time": "9",
-          "duration": "4",
+          "duration": 4,
           "building": "See Email for ",
           "room": "see Email for Room"
         },
@@ -223,6 +223,608 @@
       ]
     }
   },
+  "L5": {
+    "common": {
+      "events": [
+        {
+          "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
+          "description": "A welcome to the School from the Head of the School of Computing. For direct-entry students who are new to the University only",
+          "day": "monday",
+          "time": "11",
+          "building": "Richmond",
+          "room": "Lecture Theatre 2"
+        },
+        {
+          "title": "Campus Tour (DIRECT ENTRANTS ONLY)",
+          "description": "A tour of campus for direct-entry students who are new to the University only",
+          "day": "monday",
+          "time": "14",
+          "building": "Buckingham",
+          "room": "Floor 1"
+        },
+        {
+          "title": "Careers",
+          "description": "Information about the careers services available to you.",
+          "day": "thursday",
+          "time": "12",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Industrial Placements and Research and Innovation talk",
+          "description": "An overview of R and I opportunties in the school for projects and placements.",
+          "day": "thursday",
+          "time": "14",
+          "duration": 1.5,
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Welcome to Operating Systems and Internetworking",
+          "description": "An introduction to this core module",
+          "day": "friday",
+          "time": "10",
+          "building": "Portland",
+          "room": "Room 1.74",
+          "not": [
+            "se",
+            "networks",
+            "datasci"
+          ]
+        },
+        {
+          "title": "Feedback sessions (DIRECT ENTRANTS ONLY)",
+          "description": "Feedback sessions for your induction task",
+          "day": "friday",
+          "time": "12",
+          "building": "TBC",
+          "room": "TBC"
+        }
+      ]
+    },
+    "networks": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Portland",
+          "room": "Room 1.51"
+        }
+      ]
+    },
+    "compsci-b": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Richmond",
+          "room": "Lecture Theatre 2"
+        }
+      ]
+    },
+    "compsci-m": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Richmond",
+          "room": "Lecture Theatre 2"
+        }
+      ]
+    },
+    "computing": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Milldam",
+          "room": "LE 0.06"
+        },
+        {
+          "title": "Computing Course Meeting",
+          "description": "A chance to meet all students studying computing",
+          "day": "friday",
+          "time": "15",
+          "building": "Milldam",
+          "room": "LE 0.05"
+        }
+      ]
+    },
+    "cyfor": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Tech Intro for Cyber (Surnames A-J)",
+          "description": "An overview of the technologies you will need for your course",
+          "day": "tuesday",
+          "time": "11",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Tech Intro for Cyber (Surnames K-Z)",
+          "description": "An overview of the technologies you will need for your course",
+          "day": "tuesday",
+          "time": "12",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Burnaby",
+          "room": "Room 3.30"
+        },
+        {
+          "title": "Invited Speaker Talk",
+          "description": "A talk from industry",
+          "day": "thursday",
+          "time": "11",
+          "building": "Portland",
+          "room": "Lecture Theatre 1.74"
+        }
+      ]
+    },
+    "datasci": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Richmond",
+          "room": "Room 2.02"
+        }
+      ]
+    },
+    "se": {
+      "events": [
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year",
+          "day": "tuesday",
+          "time": "10",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "10",
+          "building": "Burnaby",
+          "room": "Room 2.26"
+        }
+      ]
+    }
+  },
+  "L6": {
+    "common": {
+      "events": [
+        {
+          "title": "Complex Problem Solving bootstrap",
+          "description": "Only for students who are taking this module",
+          "day": "tuesday",
+          "time": "11",
+          "duration": 2,
+          "building": "FTC",
+          "room": "Floor 2",
+          "not": [
+            "datasci",
+            "computing"
+          ]
+        },
+        {
+          "title": "Enterprise Talk",
+          "description": "Enterprise talk with Eilish Gorse from the careers service",
+          "day": "tuesday",
+          "time": "14",
+          "building": "Park",
+          "room": "Room 2.23"
+        },
+        {
+          "title": "Projects Introduction",
+          "description": "Introduction to the Project (if you have not attended this previously)",
+          "day": "tuesday",
+          "time": "15",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Projects Q&A",
+          "description": "Q&A about the final year project",
+          "day": "tuesday",
+          "time": "16",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Research and Innovation Talk",
+          "description": "A brief overview of research in SoC with some notable case studies, and promotion of research-led Final Year Projects",
+          "day": "wednesday",
+          "time": "15",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Complex Problem Solving team formation",
+          "description": "Only for students who are taking this module",
+          "day": "thursday",
+          "time": "13",
+          "duration": 2,
+          "building": "FTC",
+          "room": "Floor 2",
+          "not": [
+            "datasci",
+            "computing"
+          ]
+        },
+        {
+          "title": "Careers and Volunteering",
+          "description": "Careers and volunteering options to enhance your cv and employability",
+          "day": "thursday",
+          "time": "15",
+          "building": "Park",
+          "room": "Lecture Theatre 2.23"
+        },
+        {
+          "title": "Feedback sessions (DIRECT ENTRANTS ONLY)",
+          "description": "Feedback sessions for your induction task",
+          "day": "friday",
+          "time": "12",
+          "building": "TBC",
+          "room": "TBC"
+        },
+        {
+          "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
+          "description": "A welcome to the School from the Head of the School of Computing. For direct-entry students who are new to the University only",
+          "day": "monday",
+          "time": "11",
+          "building": "Richmond",
+          "room": "Lecture Theatre 2"
+        },
+        {
+          "title": "Campus Tour (DIRECT ENTRANTS ONLY)",
+          "description": "A tour of campus for direct-entry students who are new to the University only",
+          "day": "monday",
+          "time": "14",
+          "building": "Buckingham",
+          "room": "Floor 1"
+        }
+      ]
+    },
+    "networks": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Dennis Sciama",
+          "room": "Room 1.07"
+        }
+      ]
+    },
+    "compsci-b": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Buckingham",
+          "room": "Room 3.06"
+        },
+        {
+          "title": "Introduction to THEOCS",
+          "description": "Getting started in the Theoretical Computer Science Module.",
+          "day": "wednesday",
+          "time": "13",
+          "building": "Portland",
+          "room": "Lecture Theatre 1.74"
+        }
+      ]
+    },
+    "compsci-m": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Buckingham",
+          "room": "Room 3.06"
+        },
+        {
+          "title": "Introduction to THEOCS",
+          "description": "Getting started in the Theoretical Computer Science Module.",
+          "day": "wednesday",
+          "time": "13",
+          "building": "Portland",
+          "room": "Lecture Theatre 1.74"
+        }
+      ]
+    },
+    "computing": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Lion Gate",
+          "room": "Room 2.05"
+        },
+        {
+          "title": "Computing Course Meeting",
+          "description": "A chance to meet all students studying computing",
+          "day": "friday",
+          "time": "15",
+          "building": "Milldam",
+          "room": "LE 0.05"
+        }
+      ]
+    },
+    "cyfor": {
+      "events": [
+        {
+          "title": "Tech introduction for Cyber (Surnames A-J)",
+          "description": "An introduction to the technologies you will need for final year cyber",
+          "day": "wednesday",
+          "time": "12",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Tech introduction for Cyber (Surnames K-Z)",
+          "description": "An introduction to the technologies you will need for final year cyber",
+          "day": "wednesday",
+          "time": "13",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Invited Speaker Talk",
+          "description": "A talk from industry",
+          "day": "thursday",
+          "time": "11",
+          "building": "Portland",
+          "room": "Lecture Theatre 1.74"
+        },
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Buckingham",
+          "room": "Room 3.05"
+        }
+      ]
+    },
+    "datasci": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Anglesea",
+          "room": "Room 0.30"
+        }
+      ]
+    },
+    "se": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Milldam",
+          "room": "LE 1.01"
+        }
+      ]
+    }
+  },
+  "L7": {
+    "compsci-m": {
+      "events": [
+        {
+          "title": "Welcome back from your CL",
+          "description": "A welcome back session from your course leader",
+          "day": "thursday",
+          "time": "15",
+          "building": "Anglesea",
+          "room": "Room 0.30"
+        }
+      ]
+    },
+    "aiml": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Lion Gate",
+          "room": "Room 1.22"
+        }
+      ]
+    },
+    "cnam": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Burnaby",
+          "room": "Room 2.06"
+        },
+        {
+          "title": "CISCO Induction (surnames A-J)",
+          "description": "An introduction to the Network Services and Cyber Security Module",
+          "day": "thursday",
+          "time": "11",
+          "building": "University Learning Centre",
+          "room": "Room 2.21"
+        },
+        {
+          "title": "CISCO Induction (surnames K-Z)",
+          "description": "An introduction to the Network Services and Cyber Security Module",
+          "day": "thursday",
+          "time": "12",
+          "building": "University Learning Centre",
+          "room": "Room 2.21"
+        }
+      ]
+    },
+    "cs-msc": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "University Learning Centre",
+          "room": "Room 1.23"
+        }
+      ]
+    },
+    "csfit": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Burnaby",
+          "room": "Room 1.26"
+        },
+        {
+          "title": "Practical Induction",
+          "description": "An introduction to the course",
+          "day": "thursday",
+          "time": "10",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Linux Introduction",
+          "description": "An introduction to Linux ",
+          "day": "thursday",
+          "time": "11",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        }
+      ]
+    },
+    "da": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "University Learning Centre",
+          "room": "Room 3.24"
+        },
+        {
+          "title": "Data Analytics Research and Innovation",
+          "description": "A quick introduction to the research topics related to DA and how to get data and general direction for DA projects",
+          "day": "friday",
+          "time": "10",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        }
+      ]
+    },
+    "is": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "Meet your course leader for an introduction to the course.",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Park",
+          "room": "Room 3.01"
+        }
+      ]
+    },
+    "common": {
+      "events": [
+        {
+          "title": "Skills and Expectations for MSc Study",
+          "description": "A welcome session with the Head of School",
+          "day": "thursday",
+          "not": [
+            "compsci-m"
+          ],
+          "time": "15",
+          "duration": 2,
+          "online": true,
+          "url": "https://www.port.ac.uk"
+        }
+      ]
+    }
+  },
   "plans": {
     "L4": [
       {
@@ -316,20 +918,32 @@
     ],
     "L7": [
       {
-        "code": "compsci-m",
-        "title": "MEng Computer Science"
-      },
-      {
-        "code": "da",
-        "title": "MSc Data Analytics"
+        "code": "aiml",
+        "title": "MSc Artificial Intelligence and Machine Learning"
       },
       {
         "code": "cnam",
         "title": "MSc Computer Networks and Administration"
       },
       {
+        "code": "compsci-m",
+        "title": "MEng Computer Science"
+      },
+      {
+        "code": "cs-msc",
+        "title": "MSc in Computer Science"
+      },
+      {
         "code": "csfit",
-        "title": "MSc csfit"
+        "title": "MSc Cyber Security and Forensics Information Technology"
+      },
+      {
+        "code": "da",
+        "title": "MSc Data Analytics"
+      },
+      {
+        "code": "is",
+        "title": "MSc Information Systems"
       }
     ]
   }

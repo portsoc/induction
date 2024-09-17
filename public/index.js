@@ -1,7 +1,10 @@
 const data = await fetchData();
 const ui = {};
 ui.main = document.querySelector('main');
+ui.header = document.querySelector('header');
 ui.levels = document.querySelectorAll('section.level');
+ui.topnav = ui.header.querySelector('.top-nav');
+ui.coursenav = ui.header.querySelector('.course-nav');
 
 async function fetchData() {
   const response = await fetch('./data/data.json');
@@ -13,12 +16,62 @@ function getLevelText(level) {
     "L4": "Level 4 - BSc/MEng year 1",
     "L5": "Level 5 - BSc/MEng year 2",
     "L6": "Level 6 - BSc Final Year / MEng year 3",
-    "L7": "Level 7 - MEng Year 4 / all MSc students",
+    "L7": "Level 7 - MEng Final Year / all MSc students",
   };
 
   return texts[level];
 }
 
+function buildNav() {
+  for (const [level, plans] of Object.entries(data.plans)) {
+    const btn = document.createElement('button');
+    btn.dataset.level = level;
+    btn.addEventListener('click', showCourseNav);
+    btn.textContent = getLevelText(level);
+    ui.topnav.append(btn);
+  }
+}
+
+function showCourseNav(e) {
+  ui.coursenav.classList.remove('hidden');
+  hideAllPlans();
+  showInfo();
+  ui.coursenav.innerHTML = "";
+  for (const course of data.plans[e.target.dataset.level]) {
+    const coursebtn = document.createElement('button');
+    coursebtn.textContent = course.title;
+    coursebtn.dataset.course = course.code;
+    coursebtn.dataset.level = e.target.dataset.level;
+    ui.coursenav.append(coursebtn);
+    coursebtn.addEventListener('click', showPlan);
+  }
+}
+
+function showInfo() {
+  ui.main.querySelector('.info').classList.remove('hidden');
+}
+
+function showPlan(e) {
+  hideAllPlans();
+  const level = e.target.dataset.level;
+  const course = e.target.dataset.course;
+  const levelSect = ui.main.querySelector(`section[data-level="${level}"]`);
+  const plan = levelSect.querySelector(`section[data-course="${course}"]`);
+  levelSect.classList.remove('hidden');
+  plan.classList.remove('hidden');
+  console.log(plan);
+}
+
+function hideAllPlans() {
+  const levels = document.querySelectorAll('.level');
+  for (const level of levels) {
+    for (const plan of level.querySelectorAll('.plan')) {
+      plan.classList.add('hidden');
+    }
+    level.classList.add('hidden');
+  }
+
+}
 
 
 function populate() {
@@ -30,12 +83,15 @@ function populate() {
     for (const plan of plans) {
       const planSect = document.querySelector('#course-plan').content.cloneNode(true).firstElementChild;
       levelSection.append(planSect);
+      planSect.dataset.course = plan.code;
+      planSect.classList.add('hidden');
       planSect.querySelector('.course-title').textContent = `${plan.title}`;
       // handle common events for all courses first
       if (data[level] && data[level].common) {
         for (const event of data[level].common.events) {
           if (event.not && event.not.includes(plan.code)) continue;
           const day = planSect.querySelector(`article[data-day="${event.day}"]`);
+          console.log('planning: ' + JSON.stringify(event));
           populateEvent(day, event);
         }
       }
@@ -75,17 +131,38 @@ function populateEvent(day, event) {
   day.querySelector('.events-list').append(eventElem);
   const startTimeEl = eventElem.querySelector('.time');
   const endTimeEl = eventElem.querySelector('.endtime');
-  let endTime = Number.parseInt(event.time) + 1;
+  let endTime = `${Number.parseInt(event.time) + 1}:00`;
   if (event.duration) {
-    endTime = Number.parseInt(event.time) + Number.parseInt(event.duration);
+    endTime = fixEndTime(event.time, event.duration);
   }
   startTimeEl.textContent = `${event.time}:00`;
-  endTimeEl.textContent = `${endTime}:00`;
+  endTimeEl.textContent = endTime;
   eventElem.querySelector('.title').textContent = event.title;
   eventElem.querySelector('.description').textContent = event.description;
-  eventElem.querySelector('.building').textContent = `${event.building} Building`;
-  eventElem.querySelector('.room').textContent = event.room;
+  if (event.online) {
+    const linkElem = eventElem.querySelector('.link');
+    linkElem.innerHTML = `<a href="${event.url}">Online, click to join</a>`;
+    linkElem.classList.remove('hidden');
+    eventElem.querySelector('.building').classList.add('hidden');
+    eventElem.querySelector('.room').classList.add('hidden');
+  } else {
+    eventElem.querySelector('.building').textContent = `${event.building} Building`;
+    eventElem.querySelector('.room').textContent = event.room;
+  }
+
   eventElem.dataset.time = event.time;
 }
 
+function fixEndTime(start, duration) {
+  if (!Number.isInteger(duration)) {
+    const frac = duration - Number.parseInt(duration);
+    const mins = Math.round(60 * frac);
+    return (`${Number.parseInt(start) + Number.parseInt(duration)}:${mins}`);
+  } else {
+    return (`${Number.parseInt(start) + duration}:00`);
+  }
+}
+
 populate();
+buildNav();
+showInfo();
