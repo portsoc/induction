@@ -1,3 +1,68 @@
+:root {
+  --main-bg-color: lightsteelblue;
+  --button-selected-text-color: white;
+  --content-bg-color: whitesmoke;
+}
+
 .hidden {
   display: none;
+}
+
+footer {
+  border-top: 0.05rem solid;
+  background: var(--content-bg-color);
+  margin-top: 0;
+  padding: 0.5rem;
+}
+
+footer p {
+  margin: 0.5em;
+  font-size: 0.8em;
+}
+
+header {
+  border-bottom: 0.05rem solid;
+  background: var(--content-bg-color);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+header h1 {
+  padding-left: 0.3rem;
+}
+
+header>nav {
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+header>nav>button:disabled {
+  background: var(--main-bg-color);
+  color: var(--button-selected-text-color);
+}
+
+header>nav>button {
+  min-width: 8em;
+}
+
+body {
+  max-width: 50rem;
+  margin: auto;
+  padding: 0 0.2rem;
+  background: var(--main-bg-color);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  margin: 0;
+  background: var(--content-bg-color);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex: 1 1 auto;
 }
