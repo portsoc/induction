@@ -14,10 +14,10 @@
           "title": "Meet your Personal Tutor",
           "description": "Meet your personal tutor, your first point of support this year. Your tutor should have emailed you details of where to meet.",
           "day": "monday",
-          "time": "13",
+          "time": "14",
           "duration": 2,
-          "building": "see email",
-          "room": "see email"
+          "building": "See Email for ",
+          "room": "see Email for Room"
         },
         {
           "title": "Transitioning to Higher Education (surnames A-J)",
@@ -57,8 +57,8 @@
           "day": "wednesday",
           "time": "9",
           "duration": "4",
-          "building": "See email",
-          "room": "See email"
+          "building": "See Email for ",
+          "room": "see Email for Room"
         },
         {
           "title": "Get Ready for Database Systems Development",
@@ -222,5 +222,115 @@
         }
       ]
     }
+  },
+  "plans": {
+    "L4": [
+      {
+        "code": "networks",
+        "title": "BSc Computer Networks and Security"
+      },
+      {
+        "code": "compsci-b",
+        "title": "BSc Computer Science"
+      },
+      {
+        "code": "compsci-m",
+        "title": "MEng Computer Science"
+      },
+      {
+        "code": "computing",
+        "title": "BSc Computing"
+      },
+      {
+        "code": "cyfor",
+        "title": "BSc Cyber Security and Forensics Computing"
+      },
+      {
+        "code": "datasci",
+        "title": "BSc Data Science and Analytics"
+      },
+      {
+        "code": "se",
+        "title": "BSc Software Engineering"
+      }
+    ],
+    "L5": [
+      {
+        "code": "networks",
+        "title": "BSc Computer Networks and Security"
+      },
+      {
+        "code": "compsci-b",
+        "title": "BSc Computer Science"
+      },
+      {
+        "code": "compsci-m",
+        "title": "MEng Computer Science"
+      },
+      {
+        "code": "computing",
+        "title": "BSc Computing"
+      },
+      {
+        "code": "cyfor",
+        "title": "BSc Cyber Security and Forensics Computing"
+      },
+      {
+        "code": "datasci",
+        "title": "BSc Data Science and Analytics"
+      },
+      {
+        "code": "se",
+        "title": "BSc Software Engineering"
+      }
+    ],
+    "L6": [
+      {
+        "code": "networks",
+        "title": "BSc Computer Networks and Security"
+      },
+      {
+        "code": "compsci-b",
+        "title": "BSc Computer Science"
+      },
+      {
+        "code": "compsci-m",
+        "title": "MEng Computer Science"
+      },
+      {
+        "code": "computing",
+        "title": "BSc Computing"
+      },
+      {
+        "code": "cyfor",
+        "title": "BSc Cyber Security and Forensics Computing"
+      },
+      {
+        "code": "datasci",
+        "title": "BSc Data Science and Analytics"
+      },
+      {
+        "code": "se",
+        "title": "BSc Software Engineering"
+      }
+    ],
+    "L7": [
+      {
+        "code": "compsci-m",
+        "title": "MEng Computer Science"
+      },
+      {
+        "code": "da",
+        "title": "MSc Data Analytics"
+      },
+      {
+        "code": "cnam",
+        "title": "MSc Computer Networks and Administration"
+      },
+      {
+        "code": "csfit",
+        "title": "MSc csfit"
+      }
+    ]
   }
 }

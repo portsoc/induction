@@ -21,15 +21,36 @@
 
 <template id="course-plan">
   <section>
-    <article data-day="monday">Monday</article>
-    <p>No events.</p>
-    <article data-day="tuesday">Tuesday</article>
-    <p>No events.</p>
-    <article data-day="wednesday">Wednesday</article>
-    <p>No events.</p>
-    <article data-day="thursday">Thursday</article>
-    <p>No events.</p>
-    <article data-day="friday">Friday</article>
-    <p>No events.</p>
+    <h3 class="course-title">Course</h3>
+    <article data-day="monday">
+      <h4>Monday</h4>
+      <p class="placeholder">No events.</p>
+    </article>
+    <article data-day="tuesday">
+      <h4>Tuesday</h4>
+      <p class="placeholder">No events.</p>
+    </article>
+    <article data-day="wednesday">
+      <h4>Wednesday</h4>
+      <p class="placeholder">No events.</p>
+    </article>
+    <article data-day="thursday">
+      <h4>Thursday</h4>
+      <p class="placeholder">No events.</p>
+    </article>
+    <article data-day="friday">
+      <h4>Friday</h4>
+      <p class="placeholder">No events.</p>
+    </article>
+
   </section>
+</template>
+
+<template id="event-template">
+  <div class="event">
+    <h4><span class="time"></span> – <span class="endtime"></span> <span class="title"></span></h4>
+    <p class="description"></p>
+    <p class="building"></p>
+    <p class="room"></p>
+  </div>
 </template>
