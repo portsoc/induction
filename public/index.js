@@ -10,10 +10,10 @@ async function fetchData() {
 
 function getLevelText(level) {
   const texts = {
-    "L4": "Level 4",
-    "L5": "Level 5",
-    "L6": "Level 6",
-    "L7": "Level 7",
+    "L4": "Level 4 - BSc/MEng year 1",
+    "L5": "Level 5 - BSc/MEng year 2",
+    "L6": "Level 6 - BSc Final Year / MEng year 3",
+    "L7": "Level 7 - MEng Year 4 / all MSc students",
   };
 
   return texts[level];
@@ -23,15 +23,14 @@ function getLevelText(level) {
 
 function populate() {
   for (const [level, plans] of Object.entries(data.plans)) {
-    //const levelObj = data[level];
-    const levelHolder = ui.main.querySelector(`section[data-level="${level}"]`);
-    const levelHead = document.createElement('h2');
-    levelHead.textContent = `${getLevelText(level)} courses`;
-    levelHolder.append(levelHead);
+    const levelSection = ui.main.querySelector(`section[data-level="${level}"]`);
+    const levelHead = levelSection.querySelector('h2');
+    levelHead.textContent = getLevelText(level);
+
     for (const plan of plans) {
       const planSect = document.querySelector('#course-plan').content.cloneNode(true).firstElementChild;
-      levelHolder.append(planSect);
-      planSect.querySelector('h3').textContent = plan.title;
+      levelSection.append(planSect);
+      planSect.querySelector('.course-title').textContent = `${plan.title}`;
       // handle common events for all courses first
       if (data[level] && data[level].common) {
         for (const event of data[level].common.events) {
@@ -56,14 +55,14 @@ function populate() {
 }
 
 function sortEvents(plan) {
-  const days = ["monday", "tuesday", "wednesday", "thursday", "friday"];
-  for (const day of days) {
-    const events = plan.querySelectorAll(`article[data-day="${day}"] div`);
-    for (let i = 0; i < events.length - 1; i++) {
-      if (events[i].dataset.startTime < events[i + 1].dataset.startTime) {
-        console.log('triggered');
-        events[i].parentElement.prepend(events[i]);
-      }
+  const eventsList = plan.querySelectorAll('.events-list');
+  for (const list of eventsList) {
+    const events = [...list.children];
+    events.sort((eventa, eventb) => {
+      return eventa.dataset.time - eventb.dataset.time;
+    });
+    for (const event of events) {
+      event.parentElement.append(event);
     }
   }
 }
@@ -73,7 +72,7 @@ function populateEvent(day, event) {
     ph.remove();
   }
   const eventElem = document.querySelector('#event-template').cloneNode(true).content.firstElementChild;
-  day.append(eventElem);
+  day.querySelector('.events-list').append(eventElem);
   const startTimeEl = eventElem.querySelector('.time');
   const endTimeEl = eventElem.querySelector('.endtime');
   let endTime = Number.parseInt(event.time) + 1;
@@ -86,7 +85,7 @@ function populateEvent(day, event) {
   eventElem.querySelector('.description').textContent = event.description;
   eventElem.querySelector('.building').textContent = `${event.building} Building`;
   eventElem.querySelector('.room').textContent = event.room;
-  eventElem.dataset.startTime = event.time;
+  eventElem.dataset.time = event.time;
 }
 
 populate();
