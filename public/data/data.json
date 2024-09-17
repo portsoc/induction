@@ -1,0 +1,226 @@
+{
+  "L4": {
+    "common": {
+      "events": [
+        {
+          "title": "Year 1 Welcome",
+          "description": "A welcome to the School from the Head of the School of Computing",
+          "day": "monday",
+          "time": "13",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Meet your Personal Tutor",
+          "description": "Meet your personal tutor, your first point of support this year. Your tutor should have emailed you details of where to meet.",
+          "day": "monday",
+          "time": "13",
+          "duration": 2,
+          "building": "see email",
+          "room": "see email"
+        },
+        {
+          "title": "Transitioning to Higher Education (surnames A-J)",
+          "description": "Tips and Strategies to help you succeed in Higher Education",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.01"
+        },
+        {
+          "title": "Transitioning to Higher Education (surnames K-Z)",
+          "description": "Tips and Strategies to help you succeed in Higher Education",
+          "day": "tuesday",
+          "time": "11",
+          "building": "Buckingham",
+          "room": "Room 1.01"
+        },
+        {
+          "title": "Introduction to Programming",
+          "description": "An Introduction to the Programming module",
+          "day": "tuesday",
+          "time": "13",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Introduction to Programming",
+          "description": "An Introduction to the Programming module (duplicate of previous session)",
+          "day": "tuesday",
+          "time": "14",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Treasure Hunt Presentations",
+          "description": "Show your findings of the Treasure Hunt challenge. Your personal tutor will have emailed a specific time and room.",
+          "day": "wednesday",
+          "time": "9",
+          "duration": "4",
+          "building": "See email",
+          "room": "See email"
+        },
+        {
+          "title": "Get Ready for Database Systems Development",
+          "description": "Set up and configure your virtual machine (VM) in preparation for the hands-on experience and CW in DSD. See your email for the specific session to attend.",
+          "day": "wednesday",
+          "time": "13",
+          "building": "Richmond",
+          "room": "Room 1.04",
+          "not": [
+            "cyfor",
+            "networks"
+          ]
+        },
+        {
+          "title": "Get Ready for Database Systems Development",
+          "description": "Set up and configure your virtual machine (VM) in preparation for the hands-on experience and CW in DSD. See your email for the specific session to attend.",
+          "day": "wednesday",
+          "time": "14",
+          "building": "Portland",
+          "room": "Room 2.27",
+          "not": [
+            "cyfor",
+            "networks"
+          ]
+        },
+        {
+          "title": "Get Ready for Database Systems Development",
+          "description": "Set up and configure your virtual machine (VM) in preparation for the hands-on experience and CW in DSD. See your email for the specific session to attend.",
+          "day": "wednesday",
+          "time": "15",
+          "building": "Richmond",
+          "room": "Room 1.03",
+          "not": [
+            "cyfor",
+            "networks"
+          ]
+        },
+        {
+          "title": "Careers and Employability",
+          "description": "Discover the careers service at the University and what you can do with your degree.",
+          "day": "thursday",
+          "time": "13",
+          "building": "Richmond",
+          "room": "Lecture Theatre 1"
+        },
+        {
+          "title": "Alternative Personal Tutor meeting",
+          "description": "If you were unable to meet your personal tutor on Monday, attend this alternative meeting. ",
+          "day": "friday",
+          "time": "10",
+          "building": "Park",
+          "room": "Room 2.23"
+        }
+      ]
+    },
+    "networks": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leader, Dr Shikun Zhou.",
+          "day": "monday",
+          "time": "10",
+          "building": "Burnaby",
+          "room": "Room 4.03"
+        }
+      ]
+    },
+    "compsci-b": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leaders, Dr Thanos Paraskelidis and Dr Mani Ghahremani.",
+          "day": "monday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 3.06"
+        }
+      ]
+    },
+    "compsci-m": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leader, Dr Ioannis Kagalidis.",
+          "day": "monday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 3.06"
+        }
+      ]
+    },
+    "computing": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leader, Dr Amanda Peart.",
+          "day": "monday",
+          "time": "10",
+          "building": "Lion Gate",
+          "room": "BK2.02"
+        },
+        {
+          "title": "Computing Course Meeting",
+          "description": "A chance to meet all students studying computing",
+          "day": "friday",
+          "time": "15",
+          "building": "Milldam",
+          "room": "LE 0.05"
+        }
+      ]
+    },
+    "cyfor": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leaders, Dr Martin Sparrius and Dr David Williams.",
+          "day": "monday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 3.05"
+        },
+        {
+          "title": "Tech introduction for Cyber (Surnames A-J)",
+          "description": "An introduction to the technologies you will need in your course",
+          "day": "friday",
+          "time": "11",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        },
+        {
+          "title": "Tech introduction for Cyber (Surnames K-Z)",
+          "description": "An introduction to the technologies you will need in your course",
+          "day": "friday",
+          "time": "12",
+          "building": "Lion Gate",
+          "room": "Room 0.07"
+        }
+      ]
+    },
+    "datasci": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leader, Dr Farzad Arabikhan",
+          "day": "monday",
+          "time": "10",
+          "building": "Dennis Sciama",
+          "room": "Room 1.07"
+        }
+      ]
+    },
+    "se": {
+      "events": [
+        {
+          "title": "Meet your Course Leader",
+          "description": "A welcome and introduction from your course leaders, Dr Valentin Adamescu and Dr Claudia Iacob",
+          "day": "monday",
+          "time": "10",
+          "building": "Burnaby",
+          "room": "Room 2.26"
+        }
+      ]
+    }
+  }
+}
