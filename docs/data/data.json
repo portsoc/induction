@@ -227,6 +227,14 @@
     "common": {
       "events": [
         {
+          "title": "Exchange Students Welcome (EXCHANGE STUDENTS ONLY)",
+          "description": "Information for students studying on exchange programmes from other Universities only.",
+          "day": "monday",
+          "time": "12",
+          "building": "Dennis Sciama",
+          "room": "Room 1.07"
+        },
+        {
           "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
           "description": "A welcome to the School from the Head of the School of Computing. For direct-entry students who are new to the University only",
           "day": "monday",
@@ -458,6 +466,14 @@
   "L6": {
     "common": {
       "events": [
+        {
+          "title": "Exchange Students Welcome (EXCHANGE STUDENTS ONLY)",
+          "description": "Information for students studying on exchange programmes from other Universities only.",
+          "day": "monday",
+          "time": "12",
+          "building": "Dennis Sciama",
+          "room": "Room 1.07"
+        },
         {
           "title": "Complex Problem Solving bootstrap",
           "description": "Only for students who are taking this module",
