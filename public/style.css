@@ -21,7 +21,6 @@ footer p {
 }
 
 header {
-  border-bottom: 0.05rem solid;
   background: var(--content-bg-color);
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -84,24 +83,44 @@ input[type="radio"] + label {
   padding: 0.25em 0.5em;
   margin: 5px;
   border-radius: 4px;
-  background-color: #69C;
-  cursor: pointer;
+  background-color: #369;
   color: white;
+  cursor: pointer;
 }
 
 /* Style for the selected state */
 input[type="radio"]:checked + label {
-  background-color: #9CF;
-  color: black;
+  color: #369;
+  background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 input[type="radio"][data-course] + label {
-  background: #96C;
+  background: #639;
   color: white;
 }
 
 input[type="radio"][data-course]:checked + label {
-  background: #C9F;
-  color: black;
+  background: white;
+  color: #639;
+}
+
+article[data-day]>h4 {
+  background: #F93;
+  color: white;
+  padding: 1em;
+}
+
+article[data-day]>* {
+  padding-left: 1em;
+}
+
+.description {
+  color: #555;
+}
+
+.building,
+.room {
+  font-size: 80%;
+  font-style: italic;
 }

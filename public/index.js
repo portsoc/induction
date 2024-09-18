@@ -46,7 +46,7 @@ function showCourseNav(e) {
   ui.coursenav.classList.remove('hidden');
   hideAllPlans();
   showInfo();
-  ui.coursenav.innerHTML = '';
+  ui.coursenav.innerHTML = '<p>Select a course:</p>';
 
   for (const course of data.plans[e.target.dataset.level]) {
     const courseInput = document.createElement('input');
