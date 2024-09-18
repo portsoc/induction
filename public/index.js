@@ -24,11 +24,20 @@ function getLevelText(level) {
 
 function buildNav() {
   for (const level of Object.keys(data.plans)) {
-    const btn = document.createElement('button');
+    const btn = document.createElement('input');
+    btn.id="l"+level
+    btn.type="radio";
+    btn.name = "level"; 
+    btn.value=getLevelText(level);
     btn.dataset.level = level;
     btn.addEventListener('click', showCourseNav);
-    btn.textContent = getLevelText(level);
     ui.topnav.append(btn);
+
+    const lab = document.createElement('label');
+    lab.htmlFor = "l"+level;
+    lab.textContent = getLevelText(level);
+    ui.topnav.append(lab);
+
   }
 }
 
