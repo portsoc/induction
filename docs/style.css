@@ -1,7 +1,11 @@
 :root {
-  --main-bg-color: lightsteelblue;
+  --main-bg-color: whitesmoke;
   --button-selected-text-color: white;
   --content-bg-color: whitesmoke;
+  --level-bg-color: #369;
+  --level-fg-color: white;
+  --course-bg-color: #639;
+  --course-fg-color: white;
 }
 
 .hidden {
@@ -9,15 +13,14 @@
 }
 
 footer {
-  border-top: 0.05rem solid;
   background: var(--content-bg-color);
   margin-top: 0;
   padding: 0.5rem;
+  text-align: center;
 }
 
 footer p {
-  margin: 0.5em;
-  font-size: 0.8em;
+  margin: 3.5em;
 }
 
 header {
@@ -27,7 +30,11 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
 
+header img {
+  width: 10em;
+  padding: 1em;
 }
 
 header h1 {
@@ -83,26 +90,26 @@ input[type="radio"] + label {
   padding: 0.25em 0.5em;
   margin: 5px;
   border-radius: 4px;
-  background-color: #369;
+  background: var(--level-bg-color);
   color: white;
   cursor: pointer;
 }
 
 /* Style for the selected state */
 input[type="radio"]:checked + label {
-  color: #369;
+  color: var(--level-bg-color);
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 input[type="radio"][data-course] + label {
-  background: #639;
-  color: white;
+  background: var(--course-bg-color);
+  color: var(--course-fg-color);
 }
 
 input[type="radio"][data-course]:checked + label {
-  background: white;
-  color: #639;
+  color: var(--course-bg-color);
+  background: var(--course-fg-color);
 }
 
 article[data-day]>h4 {
@@ -113,6 +120,7 @@ article[data-day]>h4 {
 
 article[data-day]>* {
   padding-left: 1em;
+  padding-right: 1em;
 }
 
 .description {
@@ -122,5 +130,29 @@ article[data-day]>* {
 .building,
 .room {
   font-size: 80%;
-  font-style: italic;
+  color: #369;
+  font-weight: bold;
+}
+
+
+.event {
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #369;
+  border-radius: 4px;
+  background: #FFF;
+}
+
+.event h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.event p {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.event p+p {
+ padding: 1em 2em;
 }

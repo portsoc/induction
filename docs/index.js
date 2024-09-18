@@ -64,6 +64,8 @@ function showCourseNav(e) {
 
     courseInput.addEventListener('click', showPlan);
   }
+  ui.coursenav.scrollIntoView({ behavior: 'smooth' });
+
 }
 
 function showInfo() {
@@ -78,6 +80,7 @@ function showPlan(e) {
   const plan = levelSect.querySelector(`section[data-course="${course}"]`);
   levelSect.classList.remove('hidden');
   plan.classList.remove('hidden');
+  ui.main.scrollIntoView({ behavior: 'smooth' });
   console.log(plan);
 }
 
