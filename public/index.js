@@ -33,26 +33,37 @@ function buildNav() {
     btn.addEventListener('click', showCourseNav);
     ui.topnav.append(btn);
 
-    const lab = document.createElement('label');
-    lab.htmlFor = "l"+level;
-    lab.textContent = getLevelText(level);
-    ui.topnav.append(lab);
+    const label = document.createElement('label');
+    label.htmlFor = "l"+level;
+    label.textContent = getLevelText(level);
+    ui.topnav.append(label);
 
   }
 }
+
 
 function showCourseNav(e) {
   ui.coursenav.classList.remove('hidden');
   hideAllPlans();
   showInfo();
   ui.coursenav.innerHTML = '';
+
   for (const course of data.plans[e.target.dataset.level]) {
-    const coursebtn = document.createElement('button');
-    coursebtn.textContent = course.title;
-    coursebtn.dataset.course = course.code;
-    coursebtn.dataset.level = e.target.dataset.level;
-    ui.coursenav.append(coursebtn);
-    coursebtn.addEventListener('click', showPlan);
+    const courseInput = document.createElement('input');
+    courseInput.type = 'radio';
+    courseInput.id = `course-${course.code}`;
+    courseInput.name = 'course';
+    courseInput.dataset.course = course.code;
+    courseInput.dataset.level = e.target.dataset.level;
+
+    const courseLabel = document.createElement('label');
+    courseLabel.htmlFor = `course-${course.code}`;
+    courseLabel.textContent = course.title;
+
+    ui.coursenav.append(courseInput);
+    ui.coursenav.append(courseLabel);
+
+    courseInput.addEventListener('click', showPlan);
   }
 }
 

@@ -25,18 +25,25 @@ header {
   background: var(--content-bg-color);
   padding-left: 0.3rem;
   padding-right: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 header h1 {
-  padding-left: 0.3rem;
+  flex-grow: 1;
+  padding: 0; /* Remove padding to ensure full width */
 }
 
 header>nav {
   padding-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  gap: 0.05rem;
+  flex-direction: column;
+  max-width: 22em;
 }
 
 header>nav>button:disabled {
@@ -74,9 +81,8 @@ input[type="radio"] {
 /* Style the label to look like a Material Design button */
 input[type="radio"] + label {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 0.25em 0.5em;
   margin: 5px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #69C;
   cursor: pointer;
@@ -87,14 +93,15 @@ input[type="radio"] + label {
 input[type="radio"]:checked + label {
   background-color: #9CF;
   color: black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-button {
-  padding: 1em;
-  border-radius: 0.5em;
-  border: none;
+input[type="radio"][data-course] + label {
   background: #96C;
   color: white;
 }
 
+input[type="radio"][data-course]:checked + label {
+  background: #C9F;
+  color: black;
+}
