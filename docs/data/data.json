@@ -963,5 +963,37 @@
         "title": "MSc Information Systems"
       }
     ]
-  }
+  },
+  "buidings": [
+    {
+      "name": "Future Technology Centre",
+      "url": "https://maps.app.goo.gl/Gn5YDxqVHG9qYf3z9",
+      "code": "FTC"
+    },
+    {
+      "name": "Portland",
+      "url": "https://maps.app.goo.gl/3gVzJJ7FPMv8vUqV6",
+      "code": "PO"
+    },
+    {
+      "name": "Richmond",
+      "url": "https://maps.app.goo.gl/WX4DQzSNiJtHaLgD9",
+      "code": "RB"
+    },
+    {
+      "name": "Milldam",
+      "url": "https://maps.app.goo.gl/z7BjaHLHqQBiCk7E8",
+      "code": "ML"
+    },
+    {
+      "name": "Buckingham",
+      "url": "https://maps.app.goo.gl/8SUKfKF3bib4U4L58",
+      "code": "BK"
+    },
+    {
+      "name": "Burnaby",
+      "url": "https://maps.app.goo.gl/gpyr2EG7NA3ijuH1A",
+      "code": "BB"
+    }
+  ]
 }
