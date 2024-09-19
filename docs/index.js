@@ -108,12 +108,13 @@ function hideAllPlans() {
 function populate() {
   for (const [level, plans] of Object.entries(data.plans)) {
     const levelSection = ui.main.querySelector(`section[data-level="${level}"]`);
-    const levelHead = levelSection.querySelector('h2');
+
 
     for (const plan of plans) {
-      levelHead.textContent = `${plan.title}: Level ${level.charAt(1)}`;
       const planSect = document.querySelector('#course-plan').content.cloneNode(true).firstElementChild;
       levelSection.append(planSect);
+      const levelHead = planSect.querySelector('.levelhead');
+      levelHead.textContent = `${plan.title}: Level ${level.charAt(1)}`;
       planSect.dataset.course = plan.code;
       planSect.classList.add('hidden');
       // handle common events for all courses first
