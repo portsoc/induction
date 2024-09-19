@@ -273,8 +273,8 @@
           "description": "An introduction to this core module",
           "day": "friday",
           "time": "10",
-          "building": "Portland",
-          "room": "Lecture Theatre 1.74",
+          "building": "Richond",
+          "room": "Lecture Theatre 1",
           "not": [
             "se",
             "networks",
