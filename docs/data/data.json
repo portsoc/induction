@@ -994,6 +994,26 @@
       "name": "Burnaby",
       "url": "https://maps.app.goo.gl/gpyr2EG7NA3ijuH1A",
       "code": "BB"
+    },
+    {
+      "name": "Lion Gate",
+      "url": "https://maps.app.goo.gl/KLVcYq1JqPrVL47MA",
+      "code": "LG"
+    },
+    {
+      "name": "Dennis Sciama",
+      "url": "https://maps.app.goo.gl/WiiQ6pKu2bpTXPaA7",
+      "code": "DS"
+    },
+    {
+      "name": "Park",
+      "url": "https://maps.app.goo.gl/NoJ6BZMJu66EJEDF6",
+      "code": "PK"
+    },
+    {
+      "name": "University Learning Centre",
+      "url": "https://maps.app.goo.gl/VUZjnHNeXKpMvtjG8",
+      "code": "ULC"
     }
   ]
 }
