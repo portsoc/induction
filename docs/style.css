@@ -6,6 +6,14 @@
   --level-fg-color: white;
   --course-bg-color: #639;
   --course-fg-color: white;
+
+  --button-width: 100%;
+}
+
+@media screen and (width >= 46em) {
+  :root {
+    --button-width: 22em;
+  }
 }
 
 .hidden {
@@ -49,7 +57,7 @@ header>nav {
   justify-content: flex-start;
   gap: 0.05rem;
   flex-direction: column;
-  max-width: 22em;
+  width: var(--button-width);
 }
 
 header>nav>button:disabled {
