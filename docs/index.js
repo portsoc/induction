@@ -79,7 +79,7 @@ function showPlan(e) {
   let course, level;
   if (!e) {
     course = localStorage.getItem('course');
-    level = localStorage.getItem('level')
+    level = localStorage.getItem('level');
     // select the course and level buttons
 
     if (level) {
@@ -92,7 +92,6 @@ function showPlan(e) {
       const courseBtn = ui.coursenav.querySelector(`input[data-course="${course}"]`);
       courseBtn.checked = true;
     }
-
   } else {
     level = e.target.dataset.level;
     course = e.target.dataset.course;
