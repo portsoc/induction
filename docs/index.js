@@ -65,7 +65,6 @@ function showCourseNav(e) {
     courseInput.addEventListener('click', showPlan);
   }
   ui.coursenav.scrollIntoView({ behavior: 'smooth' });
-
 }
 
 function showInfo() {
@@ -81,7 +80,6 @@ function showPlan(e) {
   levelSect.classList.remove('hidden');
   plan.classList.remove('hidden');
   ui.main.scrollIntoView({ behavior: 'smooth' });
-  console.log(plan);
 }
 
 function hideAllPlans() {
@@ -111,7 +109,7 @@ function populate() {
         for (const event of data[level].common.events) {
           if (event.not && event.not.includes(plan.code)) continue;
           const day = planSect.querySelector(`article[data-day="${event.day}"]`);
-//          console.log('planning: ' + JSON.stringify(event));
+          //          console.log('planning: ' + JSON.stringify(event));
           populateEvent(day, event);
         }
       }
@@ -174,12 +172,12 @@ function populateEvent(day, event) {
     eventElem.querySelector('.room').textContent = event.room;
     if (event.building) {
       // lookup the building url in data.buildings
-      const [building] = data.buildings.filter( br => br.name == event.building );
+      const [building] = data.buildings.filter(br => br.name == event.building);
       const mapElem = eventElem.querySelector('.map');
       if (building?.url) {
         mapElem.innerHTML = `(<a href="${building.url}">map</a>)`;
         mapElem.classList.remove('hidden');
-      } 
+      }
     }
   }
 

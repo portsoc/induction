@@ -249,7 +249,7 @@
           "day": "monday",
           "time": "14",
           "building": "Buckingham",
-          "room": "Floor 1"
+          "room": "Floor 1, Central Area"
         },
         {
           "title": "Careers",
@@ -283,11 +283,11 @@
         },
         {
           "title": "Feedback sessions (DIRECT ENTRANTS ONLY)",
-          "description": "Feedback sessions for your induction task",
+          "description": "Feedback sessions for induction week",
           "day": "friday",
           "time": "12",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 2.04"
         }
       ]
     },
@@ -295,11 +295,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Anglesea",
+          "room": "2.11a"
         },
         {
           "title": "Welcome back from your CL",
@@ -315,11 +315,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 1.29"
         },
         {
           "title": "Welcome back from your CL",
@@ -335,11 +335,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "1.29"
         },
         {
           "title": "Welcome back from your CL",
@@ -355,11 +355,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 1.39"
         },
         {
           "title": "Welcome back from your CL",
@@ -383,11 +383,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 1.37"
         },
         {
           "title": "Tech Intro for Cyber (Surnames A-J)",
@@ -427,11 +427,11 @@
       "events": [
         {
           "title": "Option choice session (Direct Entrants only)",
-          "description": "Meet your Course Leader and choose your options for the coming year",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 1.10"
         },
         {
           "title": "Welcome back from your CL",
@@ -450,8 +450,8 @@
           "description": "Meet your Course Leader and choose your options for the coming year",
           "day": "tuesday",
           "time": "10",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "1.33"
         },
         {
           "title": "Welcome back from your CL",
@@ -543,11 +543,11 @@
         },
         {
           "title": "Feedback sessions (DIRECT ENTRANTS ONLY)",
-          "description": "Feedback sessions for your induction task",
+          "description": "Feedback sessions for your induction week",
           "day": "friday",
           "time": "12",
-          "building": "TBC",
-          "room": "TBC"
+          "building": "Buckingham",
+          "room": "Room 2.04"
         },
         {
           "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
@@ -576,6 +576,14 @@
           "time": "13",
           "building": "Dennis Sciama",
           "room": "Room 1.07"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Anglesea",
+          "room": "Room 2.11a"
         }
       ]
     },
@@ -596,6 +604,14 @@
           "time": "13",
           "building": "Portland",
           "room": "Lecture Theatre 1.74"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.29"
         }
       ]
     },
@@ -616,6 +632,14 @@
           "time": "13",
           "building": "Portland",
           "room": "Lecture Theatre 1.74"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.29"
         }
       ]
     },
@@ -636,6 +660,14 @@
           "time": "15",
           "building": "Milldam",
           "room": "LE 0.05"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.39"
         }
       ]
     },
@@ -672,6 +704,14 @@
           "time": "13",
           "building": "Buckingham",
           "room": "Room 3.05"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.37"
         }
       ]
     },
@@ -684,6 +724,14 @@
           "time": "13",
           "building": "Anglesea",
           "room": "Room 0.30"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.10"
         }
       ]
     },
@@ -696,6 +744,14 @@
           "time": "13",
           "building": "Milldam",
           "room": "LE 1.01"
+        },
+        {
+          "title": "Option choice session (Direct Entrants only)",
+          "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
+          "day": "tuesday",
+          "time": "10",
+          "building": "Buckingham",
+          "room": "Room 1.33"
         }
       ]
     }
