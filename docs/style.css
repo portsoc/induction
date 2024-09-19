@@ -136,7 +136,8 @@ article[data-day]>* {
 }
 
 .building,
-.room {
+.room,
+.map {
   font-size: 80%;
   color: #369;
   font-weight: bold;

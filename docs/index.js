@@ -111,7 +111,7 @@ function populate() {
         for (const event of data[level].common.events) {
           if (event.not && event.not.includes(plan.code)) continue;
           const day = planSect.querySelector(`article[data-day="${event.day}"]`);
-          console.log('planning: ' + JSON.stringify(event));
+//          console.log('planning: ' + JSON.stringify(event));
           populateEvent(day, event);
         }
       }
@@ -172,6 +172,15 @@ function populateEvent(day, event) {
   } else {
     eventElem.querySelector('.building').textContent = `${event.building} Building`;
     eventElem.querySelector('.room').textContent = event.room;
+    if (event.building) {
+      // lookup the building url in data.buildings
+      const [building] = data.buildings.filter( br => br.name == event.building );
+      const mapElem = eventElem.querySelector('.map');
+      if (building?.url) {
+        mapElem.innerHTML = `(<a href="${building.url}">map</a>)`;
+        mapElem.classList.remove('hidden');
+      } 
+    }
   }
 
   eventElem.dataset.time = event.time;
