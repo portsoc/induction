@@ -481,7 +481,7 @@
           "day": "tuesday",
           "time": "11",
           "duration": 2,
-          "building": "FTC",
+          "building": "Future Technology Centre",
           "room": "Floor 2",
           "not": [
             "datasci",
@@ -526,7 +526,7 @@
           "day": "thursday",
           "time": "13",
           "duration": 2,
-          "building": "FTC",
+          "building": "Future Technology Centre",
           "room": "Floor 2",
           "not": [
             "datasci",
