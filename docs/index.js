@@ -111,7 +111,7 @@ function populate() {
     const levelHead = levelSection.querySelector('h2');
 
     for (const plan of plans) {
-      levelHead.textContent = `${plan.title}: ${getLevelText(level)}`;
+      levelHead.textContent = `${plan.title}: Level ${level.charAt(1)}`;
       const planSect = document.querySelector('#course-plan').content.cloneNode(true).firstElementChild;
       levelSection.append(planSect);
       planSect.dataset.course = plan.code;
