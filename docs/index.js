@@ -79,8 +79,20 @@ function showPlan(e) {
   let course, level;
   if (!e) {
     course = localStorage.getItem('course');
-    level = localStorage.getItem('level');
+    level = localStorage.getItem('level')
+    // select the course and level buttons
+
+    if (level) {
+      ui.topnav.querySelector(`input[data-level="${level}"]`).checked = true;
+    }
+
     buildCourseNav(level);
+
+    if (course) {
+      const courseBtn = ui.coursenav.querySelector(`input[data-course="${course}"]`);
+      courseBtn.checked = true;
+    }
+
   } else {
     level = e.target.dataset.level;
     course = e.target.dataset.course;
