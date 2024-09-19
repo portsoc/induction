@@ -130,6 +130,11 @@ function populate() {
   }
 }
 
+function setTitle() {
+  const title = ui.header.querySelector('#title');
+  title.textContent = data.title;
+}
+
 function sortEvents(plan) {
   const eventsList = plan.querySelectorAll('.events-list');
   for (const list of eventsList) {
@@ -185,6 +190,7 @@ function fixEndTime(start, duration) {
 
 async function main() {
   await fetchData();
+  setTitle();
   populate();
   buildNav();
   showInfo();
