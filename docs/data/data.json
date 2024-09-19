@@ -159,7 +159,7 @@
           "day": "monday",
           "time": "10",
           "building": "Lion Gate",
-          "room": "BK2.02"
+          "room": "Room 2.02"
         },
         {
           "title": "Computing Course Meeting",
@@ -218,8 +218,8 @@
           "description": "A welcome and introduction from your course leaders, Dr Valentin Adamescu and Dr Claudia Iacob",
           "day": "monday",
           "time": "10",
-          "building": "Burnaby",
-          "room": "Room 2.26"
+          "building": "Milldam",
+          "room": "LE 0.05"
         }
       ]
     }
@@ -274,7 +274,7 @@
           "day": "friday",
           "time": "10",
           "building": "Portland",
-          "room": "Room 1.74",
+          "room": "Lecture Theatre 1.74",
           "not": [
             "se",
             "networks",
@@ -494,7 +494,7 @@
           "day": "tuesday",
           "time": "14",
           "building": "Park",
-          "room": "Room 2.23"
+          "room": "Lecture Theatre 2.23"
         },
         {
           "title": "Projects Introduction",
