@@ -99,14 +99,13 @@ function populate() {
   for (const [level, plans] of Object.entries(data.plans)) {
     const levelSection = ui.main.querySelector(`section[data-level="${level}"]`);
     const levelHead = levelSection.querySelector('h2');
-    levelHead.textContent = getLevelText(level);
 
     for (const plan of plans) {
+      levelHead.textContent = `${plan.title}: ${getLevelText(level)}`;
       const planSect = document.querySelector('#course-plan').content.cloneNode(true).firstElementChild;
       levelSection.append(planSect);
       planSect.dataset.course = plan.code;
       planSect.classList.add('hidden');
-      planSect.querySelector('.course-title').textContent = `${plan.title}`;
       // handle common events for all courses first
       if (data[level] && data[level].common) {
         for (const event of data[level].common.events) {
