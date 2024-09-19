@@ -42,18 +42,22 @@ function buildNav() {
 
 
 function showCourseNav(e) {
-  ui.coursenav.classList.remove('hidden');
   hideAllPlans();
   showInfo();
-  ui.coursenav.innerHTML = '<p>Select a course:</p>';
+  buildCourseNav(e.target.dataset.level);
+  ui.coursenav.scrollIntoView({ behavior: 'smooth' });
+}
 
-  for (const course of data.plans[e.target.dataset.level]) {
+function buildCourseNav(level) {
+  ui.coursenav.classList.remove('hidden');
+  ui.coursenav.innerHTML = '<p>Select a course:</p>';
+  for (const course of data.plans[level]) {
     const courseInput = document.createElement('input');
     courseInput.type = 'radio';
     courseInput.id = `course-${course.code}`;
     courseInput.name = 'course';
     courseInput.dataset.course = course.code;
-    courseInput.dataset.level = e.target.dataset.level;
+    courseInput.dataset.level = level;
 
     const courseLabel = document.createElement('label');
     courseLabel.htmlFor = `course-${course.code}`;
@@ -64,7 +68,6 @@ function showCourseNav(e) {
 
     courseInput.addEventListener('click', showPlan);
   }
-  ui.coursenav.scrollIntoView({ behavior: 'smooth' });
 }
 
 function showInfo() {
@@ -73,8 +76,17 @@ function showInfo() {
 
 function showPlan(e) {
   hideAllPlans();
-  const level = e.target.dataset.level;
-  const course = e.target.dataset.course;
+  let course, level;
+  if (!e) {
+    course = localStorage.getItem('course');
+    level = localStorage.getItem('level');
+    buildCourseNav(level);
+  } else {
+    level = e.target.dataset.level;
+    course = e.target.dataset.course;
+    localStorage.setItem('course', course);
+    localStorage.setItem('level', level);
+  }
   const levelSect = ui.main.querySelector(`section[data-level="${level}"]`);
   const plan = levelSect.querySelector(`section[data-course="${course}"]`);
   levelSect.classList.remove('hidden');
@@ -109,7 +121,6 @@ function populate() {
         for (const event of data[level].common.events) {
           if (event.not && event.not.includes(plan.code)) continue;
           const day = planSect.querySelector(`article[data-day="${event.day}"]`);
-          //          console.log('planning: ' + JSON.stringify(event));
           populateEvent(day, event);
         }
       }
@@ -172,7 +183,7 @@ function populateEvent(day, event) {
     eventElem.querySelector('.room').textContent = event.room;
     if (event.building) {
       // lookup the building url in data.buildings
-      const [building] = data.buildings.filter(br => br.name == event.building);
+      const [building] = data.buildings.filter(br => br.name === event.building);
       const mapElem = eventElem.querySelector('.map');
       if (building?.url) {
         mapElem.innerHTML = `(<a href="${building.url}">map</a>)`;
@@ -200,6 +211,9 @@ async function main() {
   populate();
   buildNav();
   showInfo();
+  if (localStorage.getItem('course') && localStorage.getItem('level')) {
+    showPlan();
+  }
 }
 
 main();
