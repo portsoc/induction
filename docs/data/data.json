@@ -38,7 +38,7 @@
         },
         {
           "title": "Introduction to Programming",
-          "description": "An Introduction to the Programming module",
+          "description": "An Introduction to the Programming module (surnames A-J)",
           "day": "tuesday",
           "time": "13",
           "building": "Richmond",
@@ -46,7 +46,7 @@
         },
         {
           "title": "Introduction to Programming",
-          "description": "An Introduction to the Programming module (duplicate of previous session)",
+          "description": "An Introduction to the Programming module (surnames K-Z)",
           "day": "tuesday",
           "time": "14",
           "building": "Richmond",
