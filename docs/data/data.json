@@ -16,7 +16,8 @@
             "Janka Chlebikova",
             "Matt Dennis",
             "Matthew Poole",
-            "Rinat Khusainov"
+            "Rinat Khusainov",
+            "Ana Baker"
           ]
         },
         {
@@ -1378,5 +1379,12 @@
       "url": "https://maps.app.goo.gl/CE8aHLFgXtEmes6A7",
       "code": "A"
     }
-  ]
+  ],
+  "staff": {
+    "nonsoc": [
+      "Kelly Biggs",
+      "Ana Baker",
+      "Eilish Gorse"
+    ]
+  }
 }

@@ -207,7 +207,17 @@ function populateEvent(day, event) {
   if (event.staff) {
     const staffElem = eventElem.querySelector('.staff');
     staffElem.classList.remove('hidden');
-    staffElem.textContent = `Staff: ${event.staff.join(', ')}`;
+
+    staffElem.textContent = 'Staff: ';
+    for (const staff of event.staff) {
+      if (data.staff.nonsoc.includes(staff)) {
+        staffElem.innerHTML += `${staff}, `;
+      } else {
+        const parts = staff.toLowerCase().split(' ');
+        staffElem.innerHTML += `<a href="https://soc.port.ac.uk/staff/#${parts.join('%20')}">${staff}</a>, `;
+      }
+    }
+    staffElem.innerHTML = staffElem.innerHTML.replace(/(^[,\s]+)|([,\s]+$)/g, '');
   }
 
   eventElem.dataset.time = event.time;

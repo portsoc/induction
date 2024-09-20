@@ -171,3 +171,7 @@ article[data-day]>* {
 .staff {
   padding: 0 !important;
 }
+
+.staff a {
+  color: #369;
+}
