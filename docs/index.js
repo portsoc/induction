@@ -204,6 +204,12 @@ function populateEvent(day, event) {
     }
   }
 
+  if (event.staff) {
+    const staffElem = eventElem.querySelector('.staff');
+    staffElem.classList.remove('hidden');
+    staffElem.textContent = `Staff: ${event.staff.join(', ')}`;
+  }
+
   eventElem.dataset.time = event.time;
 }
 

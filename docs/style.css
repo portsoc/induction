@@ -10,7 +10,7 @@
   --button-width: 100%;
 }
 
-@media screen and (width >= 46em) {
+@media screen and (width >=46em) {
   :root {
     --button-width: 22em;
   }
@@ -47,7 +47,8 @@ header img {
 
 header h1 {
   flex-grow: 1;
-  padding: 0; /* Remove padding to ensure full width */
+  padding: 0;
+  /* Remove padding to ensure full width */
 }
 
 header>nav {
@@ -93,7 +94,7 @@ input[type="radio"] {
 }
 
 /* Style the label to look like a Material Design button */
-input[type="radio"] + label {
+input[type="radio"]+label {
   display: inline-block;
   padding: 0.25em 0.5em;
   margin: 5px;
@@ -104,18 +105,18 @@ input[type="radio"] + label {
 }
 
 /* Style for the selected state */
-input[type="radio"]:checked + label {
+input[type="radio"]:checked+label {
   color: var(--level-bg-color);
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-input[type="radio"][data-course] + label {
+input[type="radio"][data-course]+label {
   background: var(--course-bg-color);
   color: var(--course-fg-color);
 }
 
-input[type="radio"][data-course]:checked + label {
+input[type="radio"][data-course]:checked+label {
   color: var(--course-bg-color);
   background: var(--course-fg-color);
 }
@@ -137,7 +138,8 @@ article[data-day]>* {
 
 .building,
 .room,
-.map {
+.map,
+.staff {
   font-size: 80%;
   color: #369;
   font-weight: bold;
@@ -163,5 +165,9 @@ article[data-day]>* {
 }
 
 .event p+p {
- padding: 1em 2em;
+  padding: 1em 2em;
+}
+
+.staff {
+  padding: 0 !important;
 }

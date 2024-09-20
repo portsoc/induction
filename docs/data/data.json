@@ -9,7 +9,15 @@
           "day": "monday",
           "time": "13",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Ronel Beukman",
+            "Rich Boakes",
+            "Janka Chlebikova",
+            "Matt Dennis",
+            "Matthew Poole",
+            "Rinat Khusainov"
+          ]
         },
         {
           "title": "Meet your Personal Tutor",
@@ -26,7 +34,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.01"
+          "room": "Room 1.01",
+          "staff": [
+            "Nadim Bakhshov"
+          ]
         },
         {
           "title": "Transitioning to Higher Education (surnames K-Z)",
@@ -34,7 +45,10 @@
           "day": "tuesday",
           "time": "11",
           "building": "Buckingham",
-          "room": "Room 1.01"
+          "room": "Room 1.01",
+          "staff": [
+            "Nadim Bakhshov"
+          ]
         },
         {
           "title": "Introduction to Programming (surnames A-J)",
@@ -42,7 +56,11 @@
           "day": "tuesday",
           "time": "13",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Matthew Poole",
+            "Mani Ghahremani"
+          ]
         },
         {
           "title": "Introduction to Programming (surnames K-Z)",
@@ -50,7 +68,11 @@
           "day": "tuesday",
           "time": "14",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Matthew Poole",
+            "Mani Ghahremani"
+          ]
         },
         {
           "title": "Treasure Hunt Presentations",
@@ -71,6 +93,9 @@
           "not": [
             "cyfor",
             "networks"
+          ],
+          "staff": [
+            "Valentin Adamescu"
           ]
         },
         {
@@ -83,6 +108,9 @@
           "not": [
             "cyfor",
             "networks"
+          ],
+          "staff": [
+            "Valentin Adamescu"
           ]
         },
         {
@@ -95,6 +123,9 @@
           "not": [
             "cyfor",
             "networks"
+          ],
+          "staff": [
+            "Valentin Adamescu"
           ]
         },
         {
@@ -103,7 +134,10 @@
           "day": "thursday",
           "time": "13",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Kelly Biggs"
+          ]
         },
         {
           "title": "Alternative Personal Tutor meeting",
@@ -123,7 +157,10 @@
           "day": "monday",
           "time": "10",
           "building": "Burnaby",
-          "room": "Room 4.03"
+          "room": "Room 4.03",
+          "staff": [
+            "Shikun Zhou"
+          ]
         }
       ]
     },
@@ -135,7 +172,11 @@
           "day": "monday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 3.06"
+          "room": "Room 3.06",
+          "staff": [
+            "Thanos Paraskelidis",
+            "Mani Ghahremani"
+          ]
         }
       ]
     },
@@ -147,7 +188,10 @@
           "day": "monday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 3.06"
+          "room": "Room 3.06",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         }
       ]
     },
@@ -159,7 +203,10 @@
           "day": "monday",
           "time": "10",
           "building": "Lion Gate",
-          "room": "Room 2.02"
+          "room": "Room 2.02",
+          "staff": [
+            "Amanda Peart"
+          ]
         },
         {
           "title": "Computing Course Meeting",
@@ -167,7 +214,10 @@
           "day": "friday",
           "time": "15",
           "building": "Milldam",
-          "room": "LE 0.05"
+          "room": "LE 0.05",
+          "staff": [
+            "Amanda Peart"
+          ]
         }
       ]
     },
@@ -179,7 +229,11 @@
           "day": "monday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 3.05"
+          "room": "Room 3.05",
+          "staff": [
+            "Martin Sparrius",
+            "David Williams"
+          ]
         },
         {
           "title": "Tech introduction for Cyber (Surnames A-J)",
@@ -187,7 +241,11 @@
           "day": "friday",
           "time": "11",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "David Williams",
+            "Femi Fasunlade"
+          ]
         },
         {
           "title": "Tech introduction for Cyber (Surnames K-Z)",
@@ -195,7 +253,11 @@
           "day": "friday",
           "time": "12",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "David Williams",
+            "Femi Fasunlade"
+          ]
         }
       ]
     },
@@ -207,7 +269,10 @@
           "day": "monday",
           "time": "10",
           "building": "Dennis Sciama",
-          "room": "Room 1.07"
+          "room": "Room 1.07",
+          "staff": [
+            "Farzad Arabikhan"
+          ]
         }
       ]
     },
@@ -219,7 +284,11 @@
           "day": "monday",
           "time": "10",
           "building": "Milldam",
-          "room": "LE 0.05"
+          "room": "LE 0.05",
+          "staff": [
+            "Valentin Adamescu",
+            "Claudia Iacob"
+          ]
         }
       ]
     }
@@ -233,7 +302,10 @@
           "day": "monday",
           "time": "12",
           "building": "Dennis Sciama",
-          "room": "Room 1.07"
+          "room": "Room 1.07",
+          "staff": [
+            "Janka Chlebikova"
+          ]
         },
         {
           "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
@@ -241,7 +313,11 @@
           "day": "monday",
           "time": "11",
           "building": "Richmond",
-          "room": "Lecture Theatre 2"
+          "room": "Lecture Theatre 2",
+          "staff": [
+            "Ronel Beukman",
+            "Xia Han"
+          ]
         },
         {
           "title": "Campus Tour (DIRECT ENTRANTS ONLY)",
@@ -249,7 +325,10 @@
           "day": "monday",
           "time": "14",
           "building": "Buckingham",
-          "room": "Floor 1, Central Area"
+          "room": "Floor 1, Central Area",
+          "staff": [
+            "Xia Han"
+          ]
         },
         {
           "title": "Careers",
@@ -257,7 +336,10 @@
           "day": "thursday",
           "time": "12",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Kelly Biggs"
+          ]
         },
         {
           "title": "Industrial Placements and Research and Innovation talk",
@@ -266,7 +348,11 @@
           "time": "14",
           "duration": 1.5,
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Xia Han",
+            "Rinat Khusainov"
+          ]
         },
         {
           "title": "Welcome to Operating Systems and Internetworking",
@@ -279,6 +365,10 @@
             "se",
             "networks",
             "datasci"
+          ],
+          "staff": [
+            "Tamer Elboghdadly",
+            "Thanos Paraskelidis"
           ]
         },
         {
@@ -287,7 +377,10 @@
           "day": "friday",
           "time": "12",
           "building": "Buckingham",
-          "room": "Room 2.04"
+          "room": "Room 2.04",
+          "staff": [
+            "Xia Han"
+          ]
         }
       ]
     },
@@ -299,7 +392,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Anglesea",
-          "room": "2.11a"
+          "room": "2.11a",
+          "staff": [
+            "Shikun Zhou"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -307,7 +403,10 @@
           "day": "thursday",
           "time": "10",
           "building": "Portland",
-          "room": "Room 1.51"
+          "room": "Room 1.51",
+          "staff": [
+            "Shikun Zhou"
+          ]
         }
       ]
     },
@@ -319,7 +418,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.29"
+          "room": "Room 1.29",
+          "staff": [
+            "Thanos Paraskelidis",
+            "Mani Ghahremani"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -327,7 +430,11 @@
           "day": "thursday",
           "time": "10",
           "building": "Richmond",
-          "room": "Lecture Theatre 2"
+          "room": "Lecture Theatre 2",
+          "staff": [
+            "Thanos Paraskelidis",
+            "Mani Ghahremani"
+          ]
         }
       ]
     },
@@ -339,7 +446,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "1.29"
+          "room": "1.29",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -347,7 +457,10 @@
           "day": "thursday",
           "time": "10",
           "building": "Richmond",
-          "room": "Lecture Theatre 2"
+          "room": "Lecture Theatre 2",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         }
       ]
     },
@@ -359,7 +472,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.39"
+          "room": "Room 1.39",
+          "staff": [
+            "Amanda Peart"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -367,7 +483,10 @@
           "day": "thursday",
           "time": "10",
           "building": "Milldam",
-          "room": "LE 0.06"
+          "room": "LE 0.06",
+          "staff": [
+            "Amanda Peart"
+          ]
         },
         {
           "title": "Computing Course Meeting",
@@ -375,7 +494,10 @@
           "day": "friday",
           "time": "15",
           "building": "Milldam",
-          "room": "LE 0.05"
+          "room": "LE 0.05",
+          "staff": [
+            "Amanda Peart"
+          ]
         }
       ]
     },
@@ -387,7 +509,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.37"
+          "room": "Room 1.37",
+          "staff": [
+            "Martin Sparrius",
+            "David Williams"
+          ]
         },
         {
           "title": "Tech Intro for Cyber (Surnames A-J)",
@@ -395,7 +521,10 @@
           "day": "tuesday",
           "time": "11",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "David Williams"
+          ]
         },
         {
           "title": "Tech Intro for Cyber (Surnames K-Z)",
@@ -403,7 +532,10 @@
           "day": "tuesday",
           "time": "12",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "David Williams"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -411,7 +543,11 @@
           "day": "thursday",
           "time": "10",
           "building": "Burnaby",
-          "room": "Room 3.30"
+          "room": "Room 3.30",
+          "staff": [
+            "Martin Sparrius",
+            "David Williams"
+          ]
         },
         {
           "title": "Invited Speaker Talk",
@@ -419,7 +555,10 @@
           "day": "thursday",
           "time": "11",
           "building": "Portland",
-          "room": "Lecture Theatre 1.74"
+          "room": "Lecture Theatre 1.74",
+          "staff": [
+            "David Williams"
+          ]
         }
       ]
     },
@@ -431,7 +570,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.10"
+          "room": "Room 1.10",
+          "staff": [
+            "Farzad Arabikhan"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -439,7 +581,10 @@
           "day": "thursday",
           "time": "10",
           "building": "Richmond",
-          "room": "Room 2.02"
+          "room": "Room 2.02",
+          "staff": [
+            "Farzad Arabikhan"
+          ]
         }
       ]
     },
@@ -451,7 +596,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "1.33"
+          "room": "1.33",
+          "staff": [
+            "Valentin Adamescu",
+            "Claudia Iacob"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -459,7 +608,11 @@
           "day": "thursday",
           "time": "10",
           "building": "Burnaby",
-          "room": "Room 2.26"
+          "room": "Room 2.26",
+          "staff": [
+            "Valentin Adamescu",
+            "Claudia Iacob"
+          ]
         }
       ]
     }
@@ -473,7 +626,10 @@
           "day": "monday",
           "time": "12",
           "building": "Dennis Sciama",
-          "room": "Room 1.07"
+          "room": "Room 1.07",
+          "staff": [
+            "Janka Chlebikova"
+          ]
         },
         {
           "title": "Complex Problem Solving bootstrap",
@@ -486,6 +642,14 @@
           "not": [
             "datasci",
             "computing"
+          ],
+          "staff": [
+            "Matt Dennis",
+            "Kirsten Smith",
+            "Peter Bednar",
+            "Rich Boakes",
+            "Xia Han",
+            "Shelley Usher"
           ]
         },
         {
@@ -494,7 +658,10 @@
           "day": "tuesday",
           "time": "14",
           "building": "Park",
-          "room": "Lecture Theatre 2.23"
+          "room": "Lecture Theatre 2.23",
+          "staff": [
+            "Eilish Gorse"
+          ]
         },
         {
           "title": "Projects Introduction",
@@ -502,7 +669,10 @@
           "day": "tuesday",
           "time": "15",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Shelley Usher"
+          ]
         },
         {
           "title": "Projects Q&A",
@@ -510,7 +680,10 @@
           "day": "tuesday",
           "time": "16",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Shelley Usher"
+          ]
         },
         {
           "title": "Research and Innovation Talk",
@@ -518,7 +691,10 @@
           "day": "wednesday",
           "time": "15",
           "building": "Richmond",
-          "room": "Lecture Theatre 1"
+          "room": "Lecture Theatre 1",
+          "staff": [
+            "Rinat Khusainov"
+          ]
         },
         {
           "title": "Complex Problem Solving team formation",
@@ -531,6 +707,14 @@
           "not": [
             "datasci",
             "computing"
+          ],
+          "staff": [
+            "Matt Dennis",
+            "Kirsten Smith",
+            "Peter Bednar",
+            "Rich Boakes",
+            "Xia Han",
+            "Shelley Usher"
           ]
         },
         {
@@ -539,7 +723,10 @@
           "day": "thursday",
           "time": "15",
           "building": "Park",
-          "room": "Lecture Theatre 2.23"
+          "room": "Lecture Theatre 2.23",
+          "staff": [
+            "Kelly Biggs"
+          ]
         },
         {
           "title": "Feedback sessions (DIRECT ENTRANTS ONLY)",
@@ -547,7 +734,10 @@
           "day": "friday",
           "time": "12",
           "building": "Buckingham",
-          "room": "Room 2.04"
+          "room": "Room 2.04",
+          "staff": [
+            "Xia Han"
+          ]
         },
         {
           "title": "Welcome to the University (DIRECT ENTRANTS ONLY)",
@@ -555,7 +745,11 @@
           "day": "monday",
           "time": "11",
           "building": "Richmond",
-          "room": "Lecture Theatre 2"
+          "room": "Lecture Theatre 2",
+          "staff": [
+            "Ronel Beukman",
+            "Xia Han"
+          ]
         },
         {
           "title": "Campus Tour (DIRECT ENTRANTS ONLY)",
@@ -563,7 +757,10 @@
           "day": "monday",
           "time": "14",
           "building": "Buckingham",
-          "room": "Floor 1"
+          "room": "Floor 1",
+          "staff": [
+            "Xia Han"
+          ]
         }
       ]
     },
@@ -575,7 +772,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Dennis Sciama",
-          "room": "Room 1.07"
+          "room": "Room 1.07",
+          "staff": [
+            "Shikun Zhou"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -583,7 +783,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Anglesea",
-          "room": "Room 2.11a"
+          "room": "Room 2.11a",
+          "staff": [
+            "Shikun Zhou"
+          ]
         }
       ]
     },
@@ -595,7 +798,11 @@
           "day": "tuesday",
           "time": "13",
           "building": "Buckingham",
-          "room": "Room 3.06"
+          "room": "Room 3.06",
+          "staff": [
+            "Thanos Paraskelidis",
+            "Mani Ghahremani"
+          ]
         },
         {
           "title": "Introduction to THEOCS",
@@ -603,7 +810,10 @@
           "day": "wednesday",
           "time": "13",
           "building": "Portland",
-          "room": "Lecture Theatre 1.74"
+          "room": "Lecture Theatre 1.74",
+          "staff": [
+            "Janka Chlebikova"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -611,7 +821,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.29"
+          "room": "Room 1.29",
+          "staff": [
+            "Thanos Paraskelidis",
+            "Mani Ghahremani"
+          ]
         }
       ]
     },
@@ -623,7 +837,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Buckingham",
-          "room": "Room 3.06"
+          "room": "Room 3.06",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         },
         {
           "title": "Introduction to THEOCS",
@@ -631,7 +848,10 @@
           "day": "wednesday",
           "time": "13",
           "building": "Portland",
-          "room": "Lecture Theatre 1.74"
+          "room": "Lecture Theatre 1.74",
+          "staff": [
+            "Janka Chlebikova"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -639,7 +859,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.29"
+          "room": "Room 1.29",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         }
       ]
     },
@@ -651,7 +874,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Lion Gate",
-          "room": "Room 2.05"
+          "room": "Room 2.05",
+          "staff": [
+            "Amanda Peart"
+          ]
         },
         {
           "title": "Computing Course Meeting",
@@ -659,7 +885,10 @@
           "day": "friday",
           "time": "15",
           "building": "Milldam",
-          "room": "LE 0.05"
+          "room": "LE 0.05",
+          "staff": [
+            "Amanda Peart"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -667,7 +896,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.39"
+          "room": "Room 1.39",
+          "staff": [
+            "Amanda Peart"
+          ]
         }
       ]
     },
@@ -679,7 +911,10 @@
           "day": "wednesday",
           "time": "12",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "Julian Murphy"
+          ]
         },
         {
           "title": "Tech introduction for Cyber (Surnames K-Z)",
@@ -687,7 +922,10 @@
           "day": "wednesday",
           "time": "13",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "Julian Murphy"
+          ]
         },
         {
           "title": "Invited Speaker Talk",
@@ -695,7 +933,10 @@
           "day": "thursday",
           "time": "11",
           "building": "Portland",
-          "room": "Lecture Theatre 1.74"
+          "room": "Lecture Theatre 1.74",
+          "staff": [
+            "David Williams"
+          ]
         },
         {
           "title": "Welcome back from your CL",
@@ -703,7 +944,11 @@
           "day": "tuesday",
           "time": "13",
           "building": "Buckingham",
-          "room": "Room 3.05"
+          "room": "Room 3.05",
+          "staff": [
+            "Martin Sparrius",
+            "David Williams"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -711,7 +956,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.37"
+          "room": "Room 1.37",
+          "staff": [
+            "Martin Sparrius",
+            "David Williams"
+          ]
         }
       ]
     },
@@ -723,7 +972,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Anglesea",
-          "room": "Room 0.30"
+          "room": "Room 0.30",
+          "staff": [
+            "Farzad Arabikhan"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -731,7 +983,10 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.10"
+          "room": "Room 1.10",
+          "staff": [
+            "Farzad Arabikhan"
+          ]
         }
       ]
     },
@@ -743,7 +998,11 @@
           "day": "tuesday",
           "time": "13",
           "building": "Milldam",
-          "room": "LE 1.01"
+          "room": "LE 1.01",
+          "staff": [
+            "Valentin Adamescu",
+            "Claudia Iacob"
+          ]
         },
         {
           "title": "Option choice session (Direct Entrants only)",
@@ -751,7 +1010,11 @@
           "day": "tuesday",
           "time": "10",
           "building": "Buckingham",
-          "room": "Room 1.33"
+          "room": "Room 1.33",
+          "staff": [
+            "Valentin Adamescu",
+            "Claudia Iacob"
+          ]
         }
       ]
     }
@@ -765,7 +1028,10 @@
           "day": "thursday",
           "time": "15",
           "building": "Anglesea",
-          "room": "Room 0.30"
+          "room": "Room 0.30",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         }
       ]
     },
@@ -777,7 +1043,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Lion Gate",
-          "room": "Room 1.22"
+          "room": "Room 1.22",
+          "staff": [
+            "Alaa Mohasseb"
+          ]
         }
       ]
     },
@@ -789,7 +1058,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Burnaby",
-          "room": "Room 2.06"
+          "room": "Room 2.06",
+          "staff": [
+            "Shikun Zhou"
+          ]
         },
         {
           "title": "CISCO Induction (surnames A-J)",
@@ -797,7 +1069,10 @@
           "day": "thursday",
           "time": "11",
           "building": "University Learning Centre",
-          "room": "Room 2.21"
+          "room": "Room 2.21",
+          "staff": [
+            "Shikun Zhou"
+          ]
         },
         {
           "title": "CISCO Induction (surnames K-Z)",
@@ -805,7 +1080,10 @@
           "day": "thursday",
           "time": "12",
           "building": "University Learning Centre",
-          "room": "Room 2.21"
+          "room": "Room 2.21",
+          "staff": [
+            "Shikun Zhou"
+          ]
         }
       ]
     },
@@ -817,7 +1095,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "University Learning Centre",
-          "room": "Room 1.23"
+          "room": "Room 1.23",
+          "staff": [
+            "Ioannis Kagalidis"
+          ]
         }
       ]
     },
@@ -829,7 +1110,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Burnaby",
-          "room": "Room 1.26"
+          "room": "Room 1.26",
+          "staff": [
+            "Mo Adda"
+          ]
         },
         {
           "title": "Practical Induction",
@@ -837,7 +1121,10 @@
           "day": "thursday",
           "time": "10",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "Mo Adda"
+          ]
         },
         {
           "title": "Linux Introduction",
@@ -845,7 +1132,10 @@
           "day": "thursday",
           "time": "11",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "Mo Adda"
+          ]
         }
       ]
     },
@@ -857,7 +1147,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "University Learning Centre",
-          "room": "Room 3.24"
+          "room": "Room 3.24",
+          "staff": [
+            "Mohammed Bader"
+          ]
         },
         {
           "title": "Data Analytics Research and Innovation",
@@ -865,7 +1158,10 @@
           "day": "friday",
           "time": "10",
           "building": "Lion Gate",
-          "room": "Room 0.07"
+          "room": "Room 0.07",
+          "staff": [
+            "Mohammed Bader"
+          ]
         }
       ]
     },
@@ -877,7 +1173,10 @@
           "day": "tuesday",
           "time": "13",
           "building": "Park",
-          "room": "Room 3.01"
+          "room": "Room 3.01",
+          "staff": [
+            "Haythem Nakkas"
+          ]
         }
       ]
     },
@@ -892,6 +1191,9 @@
           ],
           "time": "15",
           "duration": 2,
+          "staff": [
+            "Ronel Beukman"
+          ],
           "online": true,
           "url": "https://port-ac-uk.zoom.us/j/89898184378"
         }
