@@ -1,15 +1,15 @@
-const CACHE_NAME = 'induction-tt-v1.2';
+const CACHE_NAME = 'induction-tt-v1.4';
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/',
-      '/index.html',
-      '/index.js',
-      '/style.css',
-      '/data/data.json',
+      '/induction',
+      'index.html',
+      'index.js',
+      'style.css',
+      'data/data.json',
       'logo.svg',
     ]);
   })());
