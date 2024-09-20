@@ -2,6 +2,7 @@
 <title>Induction 2024/25 – School of Computing</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="index.js" type="module"></script>
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 <header>
   <img src="logo.svg" alt="University of Portsmouth">
@@ -96,3 +97,9 @@
     <p class="link hidden"></p>
   </div>
 </template>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', { scope: '/' });
+  }
+</script>

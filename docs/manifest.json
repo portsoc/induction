@@ -1,0 +1,20 @@
+{
+  "name": "SoC Induction Week Timetable",
+  "short_name": "Induction TT",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "description": "`A list of all induction week events for School of Computing Courses.",
+  "icons": [
+    {
+      "src": "512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
