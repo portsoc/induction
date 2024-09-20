@@ -37,16 +37,16 @@
           "room": "Room 1.01"
         },
         {
-          "title": "Introduction to Programming",
-          "description": "An Introduction to the Programming module (surnames A-J)",
+          "title": "Introduction to Programming (surnames A-J)",
+          "description": "An Introduction to the Programming module. As we have a large cohort, please attend this session if your surname begins with letters A-J if possible.",
           "day": "tuesday",
           "time": "13",
           "building": "Richmond",
           "room": "Lecture Theatre 1"
         },
         {
-          "title": "Introduction to Programming",
-          "description": "An Introduction to the Programming module (surnames K-Z)",
+          "title": "Introduction to Programming (surnames K-Z)",
+          "description": "An Introduction to the Programming module As we have a large cohort, please attend this session if your surname begins with letters K-Zx if possible.",
           "day": "tuesday",
           "time": "14",
           "building": "Richmond",
