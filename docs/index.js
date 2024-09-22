@@ -1,3 +1,5 @@
+import * as core from './core.js';
+
 let data = {};
 const ui = {};
 ui.main = document.querySelector('main');
@@ -178,7 +180,7 @@ function populateEvent(day, event) {
   const endTimeEl = eventElem.querySelector('.endtime');
   let endTime = `${Number.parseInt(event.time) + 1}:00`;
   if (event.duration) {
-    endTime = fixEndTime(event.time, event.duration);
+    endTime = core.fixEndTime(event.time, event.duration);
   }
   startTimeEl.textContent = `${event.time}:00`;
   endTimeEl.textContent = endTime;
@@ -221,16 +223,6 @@ function populateEvent(day, event) {
   }
 
   eventElem.dataset.time = event.time;
-}
-
-function fixEndTime(start, duration) {
-  if (!Number.isInteger(duration)) {
-    const frac = duration - Number.parseInt(duration);
-    const mins = Math.round(60 * frac);
-    return (`${Number.parseInt(start) + Number.parseInt(duration)}:${mins}`);
-  } else {
-    return (`${Number.parseInt(start) + duration}:00`);
-  }
 }
 
 async function main() {

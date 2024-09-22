@@ -27,7 +27,8 @@
           "time": "14",
           "duration": 2,
           "building": "See Email for ",
-          "room": "see Email for Room"
+          "room": "see Email for Room",
+          "ugpts": true
         },
         {
           "title": "Transitioning to Higher Education (surnames A-J)",
@@ -82,7 +83,8 @@
           "time": "9",
           "duration": 4,
           "building": "See Email for ",
-          "room": "see Email for Room"
+          "room": "see Email for Room",
+          "ugpts": true
         },
         {
           "title": "Get Ready for Database Systems Development",
@@ -146,7 +148,8 @@
           "day": "friday",
           "time": "10",
           "building": "Park",
-          "room": "Room 2.23"
+          "room": "Room 2.23",
+          "ugpts": true
         }
       ]
     },
@@ -762,6 +765,24 @@
           "staff": [
             "Xia Han"
           ]
+        },
+        {
+          "title": "Introduction to THEOCS",
+          "description": "Getting started in the Theoretical Computer Science Module.",
+          "day": "wednesday",
+          "time": "13",
+          "building": "Portland",
+          "room": "Lecture Theatre 1.74",
+          "staff": [
+            "Janka Chlebikova"
+          ],
+          "not": [
+            "se",
+            "datasci",
+            "cyfor",
+            "computing",
+            "networks"
+          ]
         }
       ]
     },
@@ -806,17 +827,6 @@
           ]
         },
         {
-          "title": "Introduction to THEOCS",
-          "description": "Getting started in the Theoretical Computer Science Module.",
-          "day": "wednesday",
-          "time": "13",
-          "building": "Portland",
-          "room": "Lecture Theatre 1.74",
-          "staff": [
-            "Janka Chlebikova"
-          ]
-        },
-        {
           "title": "Option choice session (Direct Entrants only)",
           "description": "Meet your Course Leader and choose your options for the coming year. For students new to the University only.",
           "day": "tuesday",
@@ -841,17 +851,6 @@
           "room": "Room 3.06",
           "staff": [
             "Ioannis Kagalidis"
-          ]
-        },
-        {
-          "title": "Introduction to THEOCS",
-          "description": "Getting started in the Theoretical Computer Science Module.",
-          "day": "wednesday",
-          "time": "13",
-          "building": "Portland",
-          "room": "Lecture Theatre 1.74",
-          "staff": [
-            "Janka Chlebikova"
           ]
         },
         {
@@ -1385,6 +1384,58 @@
       "Kelly Biggs",
       "Ana Baker",
       "Eilish Gorse"
+    ],
+    "ugpts": [
+      "Matt Dennis",
+      "Ronel Beukman",
+      "Amanda Peart",
+      "Ioannis Kagalidis",
+      "Nasreen Anjum",
+      "Jiacheng Tan",
+      "Claudia Iacob",
+      "Alex Gegov",
+      "Mark Venn",
+      "Ella Haig",
+      "Mani Ghahremani",
+      "David Williams",
+      "Dongxu Gao",
+      "Rich Boakes",
+      "Kirsten Smith",
+      "Martin Sparrius",
+      "Femi Fasunlade",
+      "Zaynab Lamoyero",
+      "Janka Chlebikova",
+      "Alaa Mohasseb",
+      "Matthew Poole",
+      "Priscilla Boadi",
+      "Uchenna Ogenyi",
+      "Atafeh Khazaei",
+      "Ivan Jordanov",
+      "Valentin Adamescu",
+      "Tamer Elboghdadly",
+      "Hasheem Danbatta",
+      "Elisavet Andrikopoulou",
+      "Rinat Khusainov",
+      "Peter Bednar",
+      "Oluwatobi Fajana",
+      "Katerina Kanta",
+      "John Cox",
+      "Asim Ali",
+      "Fahad Ahmad",
+      "Paolo Serafino",
+      "Xia Han",
+      "Olumuyiwa Matthew",
+      "Athanasios Paraskelidis",
+      "Marjan Golmaryami",
+      "Zhaojie Ju",
+      "Carrie Toptan",
+      "Julian Murphy",
+      "Hamidreza Khaleghzadeh",
+      "Taiwo Adedeji",
+      "Bander Al-rimy",
+      "Dalin Zhou",
+      "Jim Briggs",
+      "Rahim Taheri"
     ]
   }
 }
