@@ -121,11 +121,13 @@ input[type="radio"][data-course]:checked+label {
   background: var(--course-fg-color);
 }
 
-article[data-day]>h3 {
+article[data-day]>h3,
+.day-title {
   background: #F93;
   color: white;
   padding: 1em;
   font-size: 1em;
+  text-transform: capitalize;
 }
 
 article[data-day]>* {
@@ -140,7 +142,8 @@ article[data-day]>* {
 .building,
 .room,
 .map,
-.staff {
+.staff,
+p.eventinfo {
   font-size: 80%;
   color: #369;
   font-weight: bold;
@@ -155,6 +158,7 @@ article[data-day]>* {
   background: #FFF;
 }
 
+.event h3,
 .event h4 {
   margin-top: 0;
   margin-bottom: 0;
@@ -169,7 +173,8 @@ article[data-day]>* {
   padding: 1em 2em;
 }
 
-.staff {
+.staff,
+p.eventinfo {
   padding: 0 !important;
 }
 

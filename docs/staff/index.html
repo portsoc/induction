@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../style.css">
+<script src="staff.js" type="module"></script>
+<title>SoC Induction - Staff View</title>
+<header>
+  <img src="../logo.svg" alt="University of Portsmouth">
+  <h1>Loading&hellip;</h1>
+</header>
+
+<main>
+</main>
+
+<template id="day-template">
+  <section class="day">
+    <h2 class="day-title"></h2>
+    <article class="events">
+      <p class="placeholder">No events.</p>
+    </article>
+    </div>
+  </section>
+</template>
+
+<template id="event-template">
+  <div class="event">
+    <h4><span class="time"></span> – <span class="endtime"></span> <span class="title"></span></h4>
+    <p><span class="building"></span> <span class="room"></span> <span class="map hidden"></span></p>
+    <p class="description"></p>
+    <p class="staff hidden"></p>
+    <p class="link hidden"></p>
+    <p class="eventinfo"><span class="info-level"></span>: <span class="info-courses"></span></p>
+  </div>
+</template>
+
+</html>
