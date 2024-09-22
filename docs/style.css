@@ -121,10 +121,11 @@ input[type="radio"][data-course]:checked+label {
   background: var(--course-fg-color);
 }
 
-article[data-day]>h4 {
+article[data-day]>h3 {
   background: #F93;
   color: white;
   padding: 1em;
+  font-size: 1em;
 }
 
 article[data-day]>* {
