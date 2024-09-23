@@ -169,9 +169,9 @@ function showEventsForStaff(name) {
       if (person.toLowerCase() === name) {
         found = true;
       }
-      if (!found) {
-        event.classList.add('hidden');
-      }
+    }
+    if (!found) {
+      event.classList.add('hidden');
     }
   }
   fixEmptyDays();
