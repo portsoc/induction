@@ -59,17 +59,37 @@
     --main-fg-color: #CCC;
     --main-fg-color-description: #EEE;
   }
-  
+
 }
 
 
-#logo { grid-area: logo; }
-header { grid-area: header;}
-.top-nav { grid-area: top;}
-.staff-nav { grid-area: staff;}
-.course-nav { grid-area: course;}
-main { grid-area: main;}
-footer { grid-area: footer;}
+#logo {
+  grid-area: logo;
+}
+
+header {
+  grid-area: header;
+}
+
+.top-nav {
+  grid-area: top;
+}
+
+.staff-nav {
+  grid-area: staff;
+}
+
+.course-nav {
+  grid-area: course;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
 
 body {
   display: grid;
@@ -267,4 +287,19 @@ p.eventinfo {
   color: #369;
 }
 
+.ptsession li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 17em;
+  margin: 0.05em;
+  padding: 0.25em 0.5em;
+  background: #eee;
+}
 
+.ptsession {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

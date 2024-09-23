@@ -78,7 +78,7 @@
         },
         {
           "title": "Treasure Hunt Presentations",
-          "description": "Show your findings of the Treasure Hunt challenge. Your personal tutor will have emailed a specific time and room.",
+          "description": "Show your findings of the Treasure Hunt challenge. Your personal tutor will have emailed a specific time and room, but if you cannot find this then click below to show all tutors and rooms. You can find your tutor on your student view.",
           "day": "wednesday",
           "time": "9",
           "duration": 4,
@@ -1151,7 +1151,7 @@
           "building": "University Learning Centre",
           "room": "Room 3.24",
           "staff": [
-            "Mohammed Bader"
+            "Rahim Taheri"
           ]
         },
         {
@@ -1159,10 +1159,10 @@
           "description": "A quick introduction to the research topics related to DA and how to get data and general direction for DA projects",
           "day": "friday",
           "time": "10",
-          "building": "Lion Gate",
-          "room": "Room 0.07",
+          "building": "Milldam",
+          "room": "LE 0.05",
           "staff": [
-            "Mohammed Bader"
+            "Rahim Taheri"
           ]
         }
       ]
@@ -1379,6 +1379,16 @@
       "name": "Anglesea",
       "url": "https://maps.app.goo.gl/CE8aHLFgXtEmes6A7",
       "code": "A"
+    },
+    {
+      "name": "St Michael's",
+      "url": "https://maps.app.goo.gl/HyeaxpDEAYJcRt6UA",
+      "code": "SM"
+    },
+    {
+      "name": "University Library",
+      "url": "https://maps.app.goo.gl/afajeq2T6iCAxKQx9",
+      "code": "UL"
     }
   ],
   "staff": {
@@ -1442,7 +1452,354 @@
       "Stavros Shiaeles",
       "Nadim Bakhshov",
       "Shelley Usher",
-      "Sohail Safdar"
+      "Sohail Safdar",
+      "Mohammed Bader"
+    ]
+  },
+  "l4ptsessions": {
+    "wednesday": [
+      {
+        "staff": "Amanda Peart",
+        "building": "BK",
+        "room": "1.39",
+        "time": "9"
+      },
+      {
+        "building": "ULC",
+        "room": "2.09",
+        "staff": "Femi Fasunlade",
+        "time": "9"
+      },
+      {
+        "building": "ULC",
+        "room": "2.12",
+        "staff": "Zaynab Lamoyero",
+        "time": "9"
+      },
+      {
+        "building": "ULC",
+        "room": "2.14",
+        "staff": "Hasheem Danbatta",
+        "time": "9"
+      },
+      {
+        "building": "ML",
+        "room": "LE 0.03",
+        "staff": "Peter Bednar",
+        "time": "9"
+      },
+      {
+        "building": "PK",
+        "room": "0.11",
+        "staff": "Julian Murphy",
+        "time": "9"
+      },
+      {
+        "building": "PO",
+        "room": "1.65",
+        "staff": "Katerina Kanta",
+        "time": "9"
+      },
+      {
+        "building": "ULC",
+        "room": "2.10",
+        "staff": "John Cox",
+        "time": "9"
+      },
+      {
+        "building": "ULC",
+        "room": "2.17",
+        "staff": "Sohail Safdar",
+        "time": "9"
+      },
+      {
+        "building": "A",
+        "room": "0.27",
+        "staff": "Uchenna Ogenyi",
+        "time": "9"
+      },
+      {
+        "building": "DS",
+        "room": "1.01",
+        "staff": "Dalin Zhou",
+        "time": "9"
+      },
+      {
+        "building": "DS",
+        "room": "1.05",
+        "staff": "Alaa Mohasseb",
+        "time": "9"
+      },
+      {
+        "building": "A",
+        "room": "0.30",
+        "staff": "Dongxu Gao",
+        "time": "9"
+      },
+      {
+        "building": "LG",
+        "room": "2.03",
+        "staff": "Hamidreza Khaleghzadeh",
+        "time": "9"
+      },
+      {
+        "building": "BB",
+        "room": "4.04",
+        "staff": "Taiwo Adedeji",
+        "time": "9"
+      },
+      {
+        "building": "DS",
+        "room": "1.08",
+        "staff": "Jiacheng Tan",
+        "time": "9"
+      },
+      {
+        "building": "DS",
+        "room": "1.02",
+        "staff": "Olumuyiwa Matthew",
+        "time": "9"
+      },
+      {
+        "building": "DS",
+        "room": "1.04",
+        "staff": "Carrie Toptan",
+        "time": "9"
+      },
+      {
+        "building": "BK",
+        "room": "2.22",
+        "staff": "Rahim Taheri",
+        "time": "9"
+      },
+      {
+        "building": "BK",
+        "room": "1.30",
+        "staff": "Shelley Usher",
+        "time": "9"
+      },
+      {
+        "building": "BK",
+        "room": "3.10",
+        "staff": "Tamer Elboghdadly",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.09",
+        "staff": "Zhaojie Ju",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.12",
+        "staff": "Mani Ghahremani",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.14",
+        "staff": "Ioannis Kagalidis",
+        "time": "11"
+      },
+      {
+        "building": "ML",
+        "room": "LE 0.01",
+        "staff": "Xia Han",
+        "time": "11"
+      },
+      {
+        "building": "ML",
+        "room": "LE 0.02",
+        "staff": "Matthew Poole",
+        "time": "11"
+      },
+      {
+        "building": "ML",
+        "room": "LE 0.03",
+        "staff": "Alex Gegov",
+        "time": "11"
+      },
+      {
+        "building": "PK",
+        "room": "0.05",
+        "staff": "Oluwatobi Fajana",
+        "time": "11"
+      },
+      {
+        "building": "PK",
+        "room": "0.11",
+        "staff": "Elizavet Andrikopoulou",
+        "time": "11"
+      },
+      {
+        "building": "PO",
+        "room": "1.65",
+        "staff": "Marjan Golmaryami",
+        "time": "11"
+      },
+      {
+        "building": "SM",
+        "room": "0.10",
+        "staff": "Nasreen Anjum",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.10",
+        "staff": "Athanasios Paraskelidis",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.17",
+        "staff": "David Williams",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "2.18",
+        "staff": "Asim Ali",
+        "time": "11"
+      },
+      {
+        "building": "A",
+        "room": "0.27",
+        "staff": "Paolo Serafino",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.15",
+        "staff": "Ronel Beukman",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.15",
+        "staff": "Nadim Bakhshov",
+        "time": "11"
+      },
+      {
+        "building": "DS",
+        "room": "1.05",
+        "staff": "Ella Haig",
+        "time": "11"
+      },
+      {
+        "building": "ULC",
+        "room": "1.30",
+        "staff": "Fahad Ahmad",
+        "time": "11"
+      },
+      {
+        "building": "PK",
+        "room": "0.10",
+        "staff": "Mark Venn",
+        "time": "11"
+      },
+      {
+        "building": "UL",
+        "room": "0.35",
+        "staff": "Valentin Adamescu",
+        "time": "11"
+      },
+      {
+        "building": "UL",
+        "room": "0.36",
+        "staff": "Rinat Khusainov",
+        "time": "11"
+      },
+      {
+        "building": "UL",
+        "room": "0.37",
+        "staff": "Bander Al-rimy",
+        "time": "11"
+      },
+      {
+        "building": "LG",
+        "room": "2.03",
+        "staff": "Janka Chlebikova",
+        "time": "11"
+      },
+      {
+        "building": "PK",
+        "room": "2.19",
+        "staff": "Priscilla Boadi",
+        "time": "11"
+      },
+      {
+        "building": "PK",
+        "room": "2.20",
+        "staff": "Claudia Iacob",
+        "time": "11"
+      },
+      {
+        "building": "BB",
+        "room": "4.04",
+        "staff": "Atafeh Khazaei",
+        "time": "11"
+      },
+      {
+        "building": "DS",
+        "room": "1.08",
+        "staff": "Matt Dennis",
+        "time": "11"
+      },
+      {
+        "building": "DS",
+        "room": "1.08",
+        "staff": "Rich Boakes",
+        "time": "11"
+      },
+      {
+        "building": "DS",
+        "room": "1.04",
+        "staff": "Kirsten Smith",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.07",
+        "staff": "Jim Briggs",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.10",
+        "staff": "Farzad Arabikhan",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "3.11",
+        "staff": "Stavros Shiaeles",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.06",
+        "staff": "Ivan Jordanov",
+        "time": "11"
+      },
+      {
+        "building": "A",
+        "room": "2.11a",
+        "staff": "Shikun Zhou",
+        "time": "11"
+      },
+      {
+        "building": "BK",
+        "room": "1.37",
+        "staff": "Martin Sparrius",
+        "time": "11"
+      },
+      {
+        "building": "UL",
+        "room": "1.05",
+        "staff": "Gelayol Golcarenarenji",
+        "time": "11"
+      }
     ]
   }
 }

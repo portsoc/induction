@@ -1,6 +1,7 @@
 import * as core from '../core.js';
 let data;
 const ui = {};
+let currStaff = false;
 ui.main = document.querySelector('main');
 ui.header = document.querySelector('header');
 const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
@@ -127,6 +128,26 @@ function createEvent(event) {
   }
 
   if (event.ugpts) {
+    if (data.l4ptsessions[event.day]) {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('staff')) {
+        const staffName = params.get('staff').replaceAll('_', ' ').toLowerCase();
+        currStaff = staffName;
+        const [booking] = data.l4ptsessions[event.day].filter(b => b.staff.toLowerCase() === currStaff);
+        if (booking) {
+          eventElem.querySelector('.room').textContent = booking.room;
+          const [building] = data.buildings.filter(br => br.code === booking.building);
+          eventElem.querySelector('.building').textContent = building.name;
+          const mapElem = eventElem.querySelector('.map');
+          if (building?.url) {
+            mapElem.innerHTML = `(<a href="${building.url}">map</a>)`;
+            mapElem.classList.remove('hidden');
+          }
+        }
+      } else {
+        // TODO show all bookings like in student view.
+      }
+    }
     eventElem.dataset.staff = JSON.stringify(data.staff.ugpts);
     for (const staff of data.staff.ugpts) {
       allStaff.add(staff);
@@ -201,7 +222,6 @@ function showEventsForCourse(course) {
     const eventCourses = JSON.parse(event.dataset.courses);
     let found = false;
     for (const eventCourse of eventCourses) {
-      console.log(eventCourse, course);
       if (course === eventCourse) {
         found = true;
       }
@@ -246,8 +266,6 @@ function populateStaffList() {
   });
 
   for (const staff of showStaff) {
-    console.log(staff);
-
     const staffElem = document.createElement('li');
     staffElem.innerHTML = `<a href="./?staff=${staff.replaceAll(' ', '_')}">${staff}</a>`;
     staffList.append(staffElem);
@@ -263,6 +281,7 @@ async function main() {
   if (params.has('staff')) {
     const staffName = params.get('staff').replaceAll('_', ' ').toLowerCase();
     showEventsForStaff(staffName);
+    currStaff = staffName;
   }
 
   if (params.has('level')) {

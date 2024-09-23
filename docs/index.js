@@ -204,6 +204,29 @@ function populateEvent(day, event) {
         mapElem.classList.remove('hidden');
       }
     }
+
+    if (event.ugpts) {
+      const bookings = data.l4ptsessions[event.day];
+      if (bookings) {
+        bookings.sort((a, b) => {
+          return a.staff.localeCompare(b.staff);
+        });
+        const sessionElem = document.querySelector('#ptbookings-template').content.cloneNode(true).firstElementChild;
+        eventElem.append(sessionElem);
+        const ul = sessionElem.querySelector('.ptsession');
+        ul.innerHTML = '';
+        for (const booking of bookings) {
+          // const li = document.createElement('li');
+          const li = document.querySelector('#ptbooking-template').content.cloneNode(true).firstElementChild;
+          li.querySelector('[name="name"]').textContent = `🎓 ${booking.staff}`;
+          const [buildingobj] = data.buildings.filter(br => br.code === booking.building);
+          li.querySelector('[name="building"]').innerHTML = `<a href="${buildingobj.url}">🏫 ${buildingobj.name}</a>`;
+          li.querySelector('[name="room"]').textContent = booking.room;
+          li.querySelector('[name="time"]').textContent = `⏰ ${booking.time.padStart(2, '0')}:00`;
+          ul.append(li);
+        }
+      }
+    }
   }
 
   if (event.staff) {
@@ -216,7 +239,7 @@ function populateEvent(day, event) {
         staffElem.innerHTML += `${staff}, `;
       } else {
         const parts = staff.toLowerCase().split(' ');
-        staffElem.innerHTML += `<a href="https://soc.port.ac.uk/staff/#${parts.join('%20')}">${staff}</a>, `;
+        staffElem.innerHTML += `<a href = "https://soc.port.ac.uk/staff/#${parts.join('%20')}"> ${staff}</a>, `;
       }
     }
     staffElem.innerHTML = staffElem.innerHTML.replace(/(^[,\s]+)|([,\s]+$)/g, '');

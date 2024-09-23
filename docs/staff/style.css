@@ -59,17 +59,37 @@
     --main-fg-color: #CCC;
     --main-fg-color-description: #EEE;
   }
-  
+
 }
 
 
-#logo { grid-area: logo; }
-header { grid-area: header;}
-.top-nav { grid-area: top;}
-.staff-nav { grid-area: staff;}
-.course-nav { grid-area: course;}
-main { grid-area: main;}
-footer { grid-area: footer;}
+#logo {
+  grid-area: logo;
+}
+
+header {
+  grid-area: header;
+}
+
+.top-nav {
+  grid-area: top;
+}
+
+.staff-nav {
+  grid-area: staff;
+}
+
+.course-nav {
+  grid-area: course;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
 
 body {
   display: grid;
@@ -266,5 +286,3 @@ p.eventinfo {
 .staff a:visited {
   color: #369;
 }
-
-
