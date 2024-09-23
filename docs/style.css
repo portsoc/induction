@@ -1,19 +1,86 @@
 :root {
-  --main-bg-color: whitesmoke;
   --button-selected-text-color: white;
-  --content-bg-color: whitesmoke;
-  --level-bg-color: #369;
-  --level-fg-color: white;
+  --button-selected-aura: #0007;
   --course-bg-color: #639;
-  --course-fg-color: white;
+  --course-fg-color: #CCC;
+  --day-bg-color: #F93;
+  --day-fg-color: white;
+  --event-bg-color: white;
+  --event-fg-color: black;
+  --level-bg-color: #369;
+  --level-fg-color: #CCC;
+  --location-fg-color: #369;
+  --main-bg-color: white;
+  --main-fg-color: #222;
+  --main-fg-color-description: #444;
 
   --button-width: 100%;
+  --max-width: 50rem;
+
+  --grid-cols: 1fr;
+  --grid-areas: "logo" "header" "top" "course" "main" "footer";
 }
 
-@media screen and (width >=46em) {
+@media screen and (width > 46em) {
   :root {
-    --button-width: 22em;
+    --grid-cols: 1fr 1fr;
+    --grid-areas: "logo logo" "header header" "top course" "main main" "footer footer";
+    --max-width: 50rem;
   }
+}
+
+
+@media screen and (width > 80em) {
+  :root {
+    --grid-cols: auto 1fr 1fr 1fr;
+    --grid-areas: "logo header header header" "top main main main" "course main main main" ". main main main" "footer footer footer footer";
+    --max-width: 80rem;
+  }
+}
+
+
+/* prefers dark query */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --button-selected-text-color: white;
+    --button-selected-aura: #0007;
+    --course-bg-color: #639;
+    --course-fg-color: #CCC;
+    --day-bg-color: #F93;
+    --day-fg-color: black;
+    --event-bg-color: #444;
+    --event-fg-color: #FFF;
+    --level-bg-color: #369;
+    --level-fg-color: #CCC;
+    --location-fg-color: #F93;
+    --main-bg-color: #222;
+    --main-fg-color: #CCC;
+    --main-fg-color-description: #EEE;
+  }
+  
+}
+
+
+#logo { grid-area: logo; }
+header { grid-area: header;}
+.top-nav { grid-area: top;}
+.course-nav { grid-area: course;}
+main { grid-area: main;}
+footer { grid-area: footer;}
+
+body {
+  display: grid;
+  grid-template-columns: var(--grid-cols);
+  grid-template-areas: var(--grid-areas);
+  min-height: 100vh;
+
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 0.2rem;
+  background: var(--main-bg-color);
+  color: var(--main-fg-color);
+
+  font-family: sans-serif;
 }
 
 .hidden {
@@ -21,7 +88,7 @@
 }
 
 footer {
-  background: var(--content-bg-color);
+  background: var(--main-bg-color);
   margin-top: 0;
   padding: 0.5rem;
   text-align: center;
@@ -32,7 +99,7 @@ footer p {
 }
 
 header {
-  background: var(--content-bg-color);
+  background: var(--main-bg-color);
   padding-left: 0.3rem;
   padding-right: 0.3rem;
   display: flex;
@@ -40,7 +107,7 @@ header {
   flex-wrap: wrap;
 }
 
-header img {
+#logo {
   width: 10em;
   padding: 1em;
 }
@@ -51,7 +118,7 @@ header h1 {
   /* Remove padding to ensure full width */
 }
 
-header>nav {
+nav {
   padding-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -61,32 +128,22 @@ header>nav {
   width: var(--button-width);
 }
 
-header>nav>button:disabled {
+nav>button:disabled {
   background: var(--main-bg-color);
   color: var(--button-selected-text-color);
 }
 
-header>nav>button {
+nav>button {
   min-width: 8em;
-}
-
-body {
-  max-width: 50rem;
-  margin: auto;
-  padding: 0 0.2rem;
-  background: var(--main-bg-color);
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 
 main {
   margin: 0;
-  background: var(--content-bg-color);
+  background: var(--main-bg-color);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   flex: 1 1 auto;
+  min-height: 90vh;
 }
 
 input[type="radio"] {
@@ -107,8 +164,8 @@ input[type="radio"]+label {
 /* Style for the selected state */
 input[type="radio"]:checked+label {
   color: var(--level-bg-color);
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: var(--level-fg-color);
+  box-shadow: 0 2px 4px var(--button-selected-aura);
 }
 
 input[type="radio"][data-course]+label {
@@ -121,10 +178,9 @@ input[type="radio"][data-course]:checked+label {
   background: var(--course-fg-color);
 }
 
-article[data-day]>h3,
-.day-title {
-  background: #F93;
-  color: white;
+article[data-day]>h3 {
+  background: var(--day-bg-color);
+  color: var(--day-fg-color);
   padding: 1em;
   font-size: 1em;
   text-transform: capitalize;
@@ -136,7 +192,7 @@ article[data-day]>* {
 }
 
 .description {
-  color: #555;
+  color: var(--main-fg-color-description);
 }
 
 .building,
@@ -145,7 +201,16 @@ article[data-day]>* {
 .staff,
 p.eventinfo {
   font-size: 80%;
-  color: #369;
+  color: var(--location-fg-color);
+  font-weight: bold;
+}
+
+
+.map,
+.map a,
+.map a:visited {
+  text-transform: uppercase;
+  color: var(--location-fg-color);
   font-weight: bold;
 }
 
@@ -153,9 +218,10 @@ p.eventinfo {
 .event {
   margin: 0.5em;
   padding: 0.5em;
-  border: 1px solid #369;
+  border: 1px solid var(--location-fg-color);
   border-radius: 4px;
-  background: #FFF;
+  background: var(--event-bg-color);
+  color: var(--event-fg-color);
 }
 
 .event h3,
@@ -178,6 +244,9 @@ p.eventinfo {
   padding: 0 !important;
 }
 
-.staff a {
+.staff a,
+.staff a:visited {
   color: #369;
 }
+
+

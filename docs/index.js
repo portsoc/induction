@@ -5,8 +5,8 @@ const ui = {};
 ui.main = document.querySelector('main');
 ui.header = document.querySelector('header');
 ui.levels = document.querySelectorAll('section.level');
-ui.topnav = ui.header.querySelector('.top-nav');
-ui.coursenav = ui.header.querySelector('.course-nav');
+ui.topnav = document.querySelector('.top-nav');
+ui.coursenav = document.querySelector('.course-nav');
 
 async function fetchData() {
   const response = await fetch('./data/data.json');
