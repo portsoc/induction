@@ -48,9 +48,9 @@ function addEvents() {
       if ((data[level] && data[level][plan.code])) {
         for (const event of data[level][plan.code].events) {
           const eventElem = createEvent(event);
-          eventElem.querySelector('.info-level').textContent = level;
+          eventElem.querySelector('.info-level').innerHTML = `<a href="./?level=${level}">${level}</a>`;
           eventElem.dataset.level = level;
-          eventElem.querySelector('.info-courses').textContent = plan.title;
+          eventElem.querySelector('.info-courses').innerHTML = `<a href="./?course=${plan.code}">${plan.title}</a>`;
           eventElem.dataset.courses = JSON.stringify([plan.code]);
         }
       }
@@ -191,12 +191,15 @@ function showEventsForCourse(course) {
   // hideAllEvents();
   for (const event of document.querySelectorAll('.event')) {
     const eventCourses = JSON.parse(event.dataset.courses);
+    let found = false;
     for (const eventCourse of eventCourses) {
       console.log(eventCourse, course);
-      if (course !== eventCourse) {
-        event.classList.add('hidden');
-        break;
+      if (course === eventCourse) {
+        found = true;
       }
+    }
+    if (!found) {
+      event.classList.add('hidden');
     }
   }
   fixEmptyDays();
