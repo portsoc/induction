@@ -850,8 +850,7 @@
           "building": "Buckingham",
           "room": "Room 3.06",
           "staff": [
-            "Athanasios Paraskelidis",
-            "Mani Ghahremani"
+            "Ioannis Kagalidis"
           ]
         },
         {
@@ -1094,9 +1093,9 @@
           "title": "Meet your Course Leader",
           "description": "Meet your course leader for an introduction to the course.",
           "day": "tuesday",
-          "time": "13",
-          "building": "University Learning Centre",
-          "room": "Room 1.23",
+          "time": "14",
+          "building": "Buckingham",
+          "room": "Room 2.03",
           "staff": [
             "Ioannis Kagalidis"
           ]
