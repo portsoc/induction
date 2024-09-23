@@ -72,6 +72,9 @@ function sortEvents() {
   }
 }
 
+const allStaff = new Set();
+
+
 
 function createEvent(event) {
   const eventElem = document.querySelector('#event-template').content.cloneNode(true).firstElementChild;
@@ -114,15 +117,21 @@ function createEvent(event) {
 
     staffElem.textContent = 'Staff: ';
     eventElem.dataset.staff = JSON.stringify(event.staff);
+
+
     for (const staff of event.staff) {
       const parts = staff.toLowerCase().split(' ');
       staffElem.innerHTML += `<a href="./?staff=${parts.join('_')}">${staff}</a>, `;
+      allStaff.add(staff);  
     }
     staffElem.innerHTML = staffElem.innerHTML.replace(/(^[,\s]+)|([,\s]+$)/g, '');
   }
 
   if (event.ugpts) {
     eventElem.dataset.staff = JSON.stringify(data.staff.ugpts);
+    for (const staff of data.staff.ugpts) {
+      allStaff.add(staff);
+    }
   }
 
   eventElem.dataset.time = event.time;
@@ -224,10 +233,27 @@ function allEventsHidden(dayElem) {
   return true;
 }
 
+function populateStaffList() {
+  // add all staff to top-nav
+  const staffList = document.querySelector('.top-nav');
+
+  const showStaff = Array.from(allStaff).sort();
+
+  for (const staff of showStaff ) {
+    console.log(staff);
+    
+    const staffElem = document.createElement('li');
+    staffElem.innerHTML = `<a href="./?staff=${staff.replaceAll(' ', '_')}">${staff}</a>`;
+    staffList.append(staffElem);
+  }
+
+}
+
 async function main() {
   await fetchData();
   setTitle();
   populateDays();
+  populateStaffList();
   const params = new URLSearchParams(window.location.search);
   if (params.has('staff')) {
     const staffName = params.get('staff').replaceAll('_', ' ').toLowerCase();
