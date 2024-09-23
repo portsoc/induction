@@ -13,6 +13,12 @@
   --main-bg-color: white;
   --main-fg-color: #222;
   --main-fg-color-description: #444;
+  --booking-fg-color: black;
+  --booking-a-color: #369;
+  --booking-a-visited: rgb(39, 79, 119);
+  --a-color: var(--booking-a-color);
+  --a-visited: var(--booking-a-visited);
+  --booking-bg-color: #eee;
 
   --button-width: 100%;
   --max-width: 50rem;
@@ -42,6 +48,7 @@
 
 
 /* prefers dark query */
+
 @media screen and (prefers-color-scheme: dark) {
   :root {
     --button-selected-text-color: white;
@@ -58,6 +65,12 @@
     --main-bg-color: #222;
     --main-fg-color: #CCC;
     --main-fg-color-description: #EEE;
+    --booking-bg-color: #322e29;
+    --booking-fg-color: white;
+    --booking-a-color: #ccc;
+    --booking-a-visited: white;
+    --a-color: var(--location-fg-color);
+    --a-visited: white;
   }
 
 }
@@ -244,9 +257,7 @@ p.eventinfo {
 }
 
 
-.map,
-.map a,
-.map a:visited {
+.map {
   text-transform: uppercase;
   color: var(--location-fg-color);
   font-weight: bold;
@@ -282,11 +293,6 @@ p.eventinfo {
   padding: 0 !important;
 }
 
-.staff a,
-.staff a:visited {
-  color: #369;
-}
-
 .ptsession li {
   list-style-type: none;
   display: flex;
@@ -294,7 +300,16 @@ p.eventinfo {
   width: 17em;
   margin: 0.05em;
   padding: 0.25em 0.5em;
-  background: #eee;
+  background: var(--booking-bg-color);
+  color: var(--booking-fg-color);
+}
+
+.ptsession a {
+  color: var(--booking-a-color);
+}
+
+.ptsession a:visited {
+  color: var(--booking-a-visited);
 }
 
 .ptsession {
@@ -302,4 +317,12 @@ p.eventinfo {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+a {
+  color: var(--a-color);
+}
+
+a:visited {
+  color: var(--a-visited);
 }
