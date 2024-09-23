@@ -157,9 +157,9 @@ function fixCourses(level, excludedCourses) {
   return retval;
 }
 
-function hideAllEvents() {
+function showAllEvents() {
   for (const event of document.querySelectorAll('.event')) {
-    event.classList.add('hidden');
+    event.classList.remove('hidden');
   }
 }
 
