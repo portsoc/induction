@@ -115,12 +115,8 @@ function createEvent(event) {
     staffElem.textContent = 'Staff: ';
     eventElem.dataset.staff = JSON.stringify(event.staff);
     for (const staff of event.staff) {
-      if (data.staff.nonsoc.includes(staff)) {
-        staffElem.innerHTML += `${staff}, `;
-      } else {
-        const parts = staff.toLowerCase().split(' ');
-        staffElem.innerHTML += `<a href="./?staff=${parts.join('_')}">${staff}</a>, `;
-      }
+      const parts = staff.toLowerCase().split(' ');
+      staffElem.innerHTML += `<a href="./?staff=${parts.join('_')}">${staff}</a>, `;
     }
     staffElem.innerHTML = staffElem.innerHTML.replace(/(^[,\s]+)|([,\s]+$)/g, '');
   }
