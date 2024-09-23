@@ -14,6 +14,13 @@
   --main-fg-color: #222;
   --main-fg-color-description: #444;
 
+  --booking-fg-color: black;
+  --booking-a-color: #369;
+  --booking-a-visited: rgb(39, 79, 119);
+  --a-color: var(--booking-a-color);
+  --a-visited: var(--booking-a-visited);
+  --booking-bg-color: #eee;
+
   --button-width: 100%;
   --max-width: 50rem;
 
@@ -58,6 +65,12 @@
     --main-bg-color: #222;
     --main-fg-color: #CCC;
     --main-fg-color-description: #EEE;
+    --booking-bg-color: #322e29;
+    --booking-fg-color: white;
+    --booking-a-color: #ccc;
+    --booking-a-visited: white;
+    --a-color: white;
+    --a-visited: #eee;
   }
 
 }
@@ -244,9 +257,7 @@ p.eventinfo {
 }
 
 
-.map,
-.map a,
-.map a:visited {
+.map {
   text-transform: uppercase;
   color: var(--location-fg-color);
   font-weight: bold;
@@ -282,7 +293,10 @@ p.eventinfo {
   padding: 0 !important;
 }
 
-.staff a,
-.staff a:visited {
-  color: #369;
+a {
+  color: var(--a-color);
+}
+
+a:visited {
+  color: var(--a-visited);
 }
