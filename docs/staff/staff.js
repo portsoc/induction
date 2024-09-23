@@ -235,9 +235,16 @@ function allEventsHidden(dayElem) {
 
 function populateStaffList() {
   // add all staff to top-nav
-  const staffList = document.querySelector('.top-nav');
+  const staffList = document.querySelector('.staff-nav');
 
-  const showStaff = Array.from(allStaff).sort();
+  // sort staff by surname
+  const showStaff = Array.from(allStaff).sort((a, b) => {
+    const aParts = a.split(' ');
+    const bParts = b.split(' ');
+    const aLast = aParts[aParts.length - 1];
+    const bLast = bParts[bParts.length - 1];
+    return aLast.localeCompare(bLast);
+  });
 
   for (const staff of showStaff ) {
     console.log(staff);
