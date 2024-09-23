@@ -39,7 +39,7 @@ function addEvents() {
         eventElem.dataset.level = level;
         const infoElem = eventElem.querySelector('.info-courses');
         const fixedCourses = fixCourses(level, event.not);
-        infoElem.textContent = fixedCourses.displayString;
+        infoElem.innerHTML = fixedCourses.displayString;
         eventElem.dataset.courses = JSON.stringify(fixedCourses.courses);
       }
     }
@@ -73,7 +73,6 @@ function sortEvents() {
 }
 
 const allStaff = new Set();
-
 
 
 function createEvent(event) {
@@ -122,7 +121,7 @@ function createEvent(event) {
     for (const staff of event.staff) {
       const parts = staff.toLowerCase().split(' ');
       staffElem.innerHTML += `<a href="./?staff=${parts.join('_')}">${staff}</a>, `;
-      allStaff.add(staff);  
+      allStaff.add(staff);
     }
     staffElem.innerHTML = staffElem.innerHTML.replace(/(^[,\s]+)|([,\s]+$)/g, '');
   }
@@ -152,7 +151,7 @@ function fixCourses(level, excludedCourses) {
   } else {
     for (const course of allCourses) {
       if (!excludedCourses.includes(course.code)) {
-        retval.displayString += `${course.title}, `;
+        retval.displayString += `<a href="./?course=${course.code}">${course.title}</a>, `;
         retval.courses.push(course.code);
       }
     }
@@ -162,11 +161,11 @@ function fixCourses(level, excludedCourses) {
   return retval;
 }
 
-function showAllEvents() {
-  for (const event of document.querySelectorAll('.event')) {
-    event.classList.remove('hidden');
-  }
-}
+// function showAllEvents() {
+//   for (const event of document.querySelectorAll('.event')) {
+//     event.classList.remove('hidden');
+//   }
+// }
 
 function showEventsForStaff(name) {
   // hideAllEvents();
@@ -246,14 +245,13 @@ function populateStaffList() {
     return aLast.localeCompare(bLast);
   });
 
-  for (const staff of showStaff ) {
+  for (const staff of showStaff) {
     console.log(staff);
-    
+
     const staffElem = document.createElement('li');
     staffElem.innerHTML = `<a href="./?staff=${staff.replaceAll(' ', '_')}">${staff}</a>`;
     staffList.append(staffElem);
   }
-
 }
 
 async function main() {
