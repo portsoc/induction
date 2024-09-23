@@ -178,6 +178,7 @@ input[type="radio"][data-course]:checked+label {
   background: var(--course-fg-color);
 }
 
+.day-title,
 article[data-day]>h3 {
   background: var(--day-bg-color);
   color: var(--day-fg-color);
@@ -190,6 +191,7 @@ article[data-day]>* {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 
 .description {
   color: var(--main-fg-color-description);
