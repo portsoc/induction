@@ -35,7 +35,7 @@ function addEvents() {
     if (data[level].common) {
       for (const event of data[level].common.events) {
         const eventElem = createEvent(event);
-        eventElem.querySelector('.info-level').textContent = level;
+        eventElem.querySelector('.info-level').innerHTML = `<a href="./?level=${level}">${level}</a>`;
         eventElem.dataset.level = level;
         const infoElem = eventElem.querySelector('.info-courses');
         const fixedCourses = fixCourses(level, event.not);
