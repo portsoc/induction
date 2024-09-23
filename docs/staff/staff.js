@@ -159,7 +159,7 @@ function createEvent(event) {
         const li = document.querySelector('#ptbooking-template').content.cloneNode(true).firstElementChild;
         li.querySelector('[name="name"]').textContent = `🎓 ${booking.staff}`;
         const [buildingobj] = data.buildings.filter(br => br.code === booking.building);
-        li.querySelector('[name="building"]').innerHTML = `<a href="${buildingobj.url}">🏫 ${buildingobj.name}</a>`;
+        li.querySelector('[name="building"]').innerHTML = `🏫 <a href="${buildingobj.url}">${buildingobj.name}</a>`;
         li.querySelector('[name="room"]').textContent = booking.room;
         li.querySelector('[name="time"]').textContent = `⏰ ${booking.time.padStart(2, '0')}:00`;
         ul.append(li);
