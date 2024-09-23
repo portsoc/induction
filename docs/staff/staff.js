@@ -164,14 +164,17 @@ function hideAllEvents() {
 }
 
 function showEventsForStaff(name) {
-  hideAllEvents();
+  // hideAllEvents();
   for (const event of document.querySelectorAll('.event')) {
     if (!event.dataset.staff) continue;
     const staff = JSON.parse(event.dataset.staff);
+    let found = false;
     for (const person of staff) {
       if (person.toLowerCase() === name) {
-        event.classList.remove('hidden');
-        break;
+        found = true;
+      }
+      if (!found) {
+        event.classList.add('hidden');
       }
     }
   }
@@ -179,23 +182,23 @@ function showEventsForStaff(name) {
 }
 
 function showEventsForLevel(level) {
-  hideAllEvents();
+  // hideAllEvents();
   for (const event of document.querySelectorAll('.event')) {
-    if (event.dataset.level === level) {
-      event.classList.remove('hidden');
+    if (event.dataset.level !== level) {
+      event.classList.add('hidden');
     }
   }
   fixEmptyDays();
 }
 
 function showEventsForCourse(course) {
-  hideAllEvents();
+  // hideAllEvents();
   for (const event of document.querySelectorAll('.event')) {
     const eventCourses = JSON.parse(event.dataset.courses);
     for (const eventCourse of eventCourses) {
       console.log(eventCourse, course);
-      if (course === eventCourse) {
-        event.classList.remove('hidden');
+      if (course !== eventCourse) {
+        event.classList.add('hidden');
         break;
       }
     }
@@ -230,9 +233,13 @@ async function main() {
   if (params.has('staff')) {
     const staffName = params.get('staff').replaceAll('_', ' ').toLowerCase();
     showEventsForStaff(staffName);
-  } else if (params.has('level')) {
+  }
+
+  if (params.has('level')) {
     showEventsForLevel(params.get('level').toUpperCase());
-  } else if (params.has('course')) {
+  }
+
+  if (params.has('course')) {
     showEventsForCourse(params.get('course').toLowerCase());
   }
 }
