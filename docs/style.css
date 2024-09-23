@@ -34,7 +34,7 @@
 @media screen and (width > 80em) {
   :root {
     --grid-cols: auto 1fr 1fr 1fr;
-    --grid-areas: "logo header header header" "top main main main" "course main main main" ". main main main" "footer footer footer footer";
+    --grid-areas: "logo header header header" "staff main main main" "top main main main" "course main main main" ". main main main" "footer footer footer footer";
     --max-width: 80rem;
     --staff-list-direction: column;
   }
