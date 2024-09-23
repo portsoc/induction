@@ -300,3 +300,29 @@ a {
 a:visited {
   color: var(--a-visited);
 }
+
+.ptsession li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 17em;
+  margin: 0.05em;
+  padding: 0.25em 0.5em;
+  background: var(--booking-bg-color);
+  color: var(--booking-fg-color);
+}
+
+.ptsession a {
+  color: var(--booking-a-color);
+}
+
+.ptsession a:visited {
+  color: var(--booking-a-visited);
+}
+
+.ptsession {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

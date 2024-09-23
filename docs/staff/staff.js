@@ -128,12 +128,13 @@ function createEvent(event) {
   }
 
   if (event.ugpts) {
-    if (data.l4ptsessions[event.day]) {
+    const bookings = data.l4ptsessions[event.day];
+    if (bookings) {
       const params = new URLSearchParams(window.location.search);
       if (params.has('staff')) {
         const staffName = params.get('staff').replaceAll('_', ' ').toLowerCase();
         currStaff = staffName;
-        const [booking] = data.l4ptsessions[event.day].filter(b => b.staff.toLowerCase() === currStaff);
+        const [booking] = bookings.filter(b => b.staff.toLowerCase() === currStaff);
         if (booking) {
           eventElem.querySelector('.room').textContent = booking.room;
           const [building] = data.buildings.filter(br => br.code === booking.building);
@@ -144,8 +145,24 @@ function createEvent(event) {
             mapElem.classList.remove('hidden');
           }
         }
-      } else {
-        // TODO show all bookings like in student view.
+      }
+
+      bookings.sort((a, b) => {
+        return a.staff.localeCompare(b.staff);
+      });
+      const sessionElem = document.querySelector('#ptbookings-template').content.cloneNode(true).firstElementChild;
+      eventElem.append(sessionElem);
+      const ul = sessionElem.querySelector('.ptsession');
+      ul.innerHTML = '';
+      for (const booking of bookings) {
+        // const li = document.createElement('li');
+        const li = document.querySelector('#ptbooking-template').content.cloneNode(true).firstElementChild;
+        li.querySelector('[name="name"]').textContent = `🎓 ${booking.staff}`;
+        const [buildingobj] = data.buildings.filter(br => br.code === booking.building);
+        li.querySelector('[name="building"]').innerHTML = `<a href="${buildingobj.url}">🏫 ${buildingobj.name}</a>`;
+        li.querySelector('[name="room"]').textContent = booking.room;
+        li.querySelector('[name="time"]').textContent = `⏰ ${booking.time.padStart(2, '0')}:00`;
+        ul.append(li);
       }
     }
     eventElem.dataset.staff = JSON.stringify(data.staff.ugpts);
