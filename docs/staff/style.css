@@ -18,14 +18,14 @@
   --max-width: 50rem;
 
   --grid-cols: 1fr;
-  --grid-areas: "logo" "header" "top" "course" "staff" "main" "footer";
+  --grid-areas: "logo" "header" "staff" "main" "footer";
   --staff-list-direction: row;
 }
 
 @media screen and (width > 46em) {
   :root {
     --grid-cols: 1fr 1fr;
-    --grid-areas: "logo logo" "header header" "top course" "staff staff" "main main" "footer footer";
+    --grid-areas: "logo logo" "header header" "staff staff" "main main" "footer footer";
     --max-width: 50rem;
   }
 }
@@ -34,7 +34,7 @@
 @media screen and (width > 80em) {
   :root {
     --grid-cols: auto 1fr 1fr 1fr;
-    --grid-areas: "logo header header header" "top main main main" "course main main main" "staff main main main" ". main main main" "footer footer footer footer";
+    --grid-areas: "logo header header header" "staff main main main" ". main main main" "footer footer footer footer";
     --max-width: 80rem;
     --staff-list-direction: column;
   }
