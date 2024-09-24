@@ -4,7 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFF",
-  "description": "`A list of all induction week events for School of Computing Courses.",
+  "description": "A list of all induction week events for School of Computing Courses.",
   "icons": [
     {
       "src": "512.png",
@@ -15,6 +15,22 @@
       "src": "192.png",
       "sizes": "192x192",
       "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "ss-wide.png",
+      "sizes": "2176x1334",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Homescreen of the Induction App"
+    },
+    {
+      "src": "ss-tall.png",
+      "sizes": "812x1826",
+      "type": "image/png",
+      "form_factor": "tall",
+      "label": "Induction Timetable on Mobile"
     }
   ]
 }
