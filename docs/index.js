@@ -1,9 +1,10 @@
 import * as core from './core.js';
-
 let data = {};
+let deferredPrompt;
 const ui = {};
 ui.main = document.querySelector('main');
 ui.header = document.querySelector('header');
+ui.footer = document.querySelector('footer');
 ui.levels = document.querySelectorAll('section.level');
 ui.topnav = document.querySelector('.top-nav');
 ui.coursenav = document.querySelector('.course-nav');
@@ -248,7 +249,25 @@ function populateEvent(day, event) {
   eventElem.dataset.time = event.time;
 }
 
+function bindInstall() {
+  const installApp = ui.footer.querySelector('.install');
+  installApp.addEventListener('click', async () => {
+    if (deferredPrompt !== null) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        deferredPrompt = null;
+      }
+    }
+  });
+}
+
 async function main() {
+  window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e;
+  });
+
+
   await fetchData();
   setTitle();
   populate();
@@ -257,6 +276,7 @@ async function main() {
   if (localStorage.getItem('course') && localStorage.getItem('level')) {
     showPlan();
   }
+  bindInstall();
 }
 
 main();

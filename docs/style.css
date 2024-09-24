@@ -130,9 +130,7 @@ footer {
   text-align: center;
 }
 
-footer p {
-  margin: 3.5em;
-}
+
 
 header {
   background: var(--main-bg-color);
